@@ -9,6 +9,6 @@ title: Zucchini Nudel Auflauf
 ---
 
 
-> Wo gefunden? Im Kochbuch 'Emmi kocht einfach'.
+> Wo gefunden? Im Internet.
 
 Guten Appetit! :)

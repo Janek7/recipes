@@ -9,6 +9,6 @@ title: Hackpfanne
 ---
 
 
-> Wo gefunden? Im Kochbuch 'Emmi kocht einfach'.
+> Wo gefunden? Im Kochbuch 'Emmi kocht einfach' auf Seite 146.
 
 Guten Appetit! :)

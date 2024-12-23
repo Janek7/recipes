@@ -11,6 +11,6 @@ title: Pfannenlasagne
 
 ![Foto 1](de824fdf-d9fa-4ad7-a77e-a7a7a4cfedc3.JPG)
 
-> Wo gefunden? Im Kochbuch 'Emmi kocht einfach'.
+> Wo gefunden? Im Kochbuch 'Emmi kocht einfach' auf Seite 133.
 
 Guten Appetit! :)

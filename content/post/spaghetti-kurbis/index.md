@@ -11,6 +11,6 @@ title: "Spaghetti K\xFCrbis"
 
 ![Foto 1](IMG_6513.JPEG)
 
-> Wo gefunden? Im Internet unter [emmikochteinfach.de > 'Spaghettikürbis mit Schinken und Käse'](https://emmikochteinfach.de/spaghettikuerbis-mit-schinken-und-kaese/).
+> Wo gefunden? Im Internet unter [emmikochteinfach.de > 'SpaghettikÃ¼rbis mit Schinken und KÃ¤se'](https://emmikochteinfach.de/spaghettikuerbis-mit-schinken-und-kaese/).
 
 Guten Appetit! :)

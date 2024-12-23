@@ -9,6 +9,6 @@ title: Zucchini Ricotta Pasta
 ---
 
 
-> Wo gefunden? Im Kochbuch 'Emmi kocht einfach'.
+> Wo gefunden? Im Kochbuch 'Emmi kocht einfach' auf Seite 129.
 
 Guten Appetit! :)

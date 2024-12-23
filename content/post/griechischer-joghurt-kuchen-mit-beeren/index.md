@@ -9,6 +9,6 @@ title: Griechischer Joghurt Kuchen mit Beeren
 ---
 
 
-> Wo gefunden? Im Kochbuch 'Emmi kocht einfach'.
+> Wo gefunden? Im Internet unter [emmikochteinfach.de > 'Himbeerkuchen mit Joghurt - saftig und einfach - emmikochteinfach'](https://emmikochteinfach.de/himbeerkuchen-mit-joghurt/).
 
 Guten Appetit! :)

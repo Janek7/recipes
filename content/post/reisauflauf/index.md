@@ -19,6 +19,6 @@ Dauert zwar lange im Ofen, kann man aber gut mit ins Büro nehmen
 
 ![Foto 1](IMG_5941.JPEG) ![Foto 2](e4716d4d-8789-4d73-b22e-a3c2a9a7ab1e.JPG)
 
-> Wo gefunden? Im Kochbuch 'Emmi kocht einfach' auf Seite 92.
+> Wo gefunden? Im Kochbuch 'Emmi kocht einfach' auf Seite 150.
 
 Guten Appetit! :)

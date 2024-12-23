@@ -93,8 +93,8 @@ const recipesData = [
         "category": "Sonstiges"
     },
     {
-        "slug": "tomaten-risotto",
-        "title": "Tomaten Risotto",
+        "slug": "tomaten-mozarella-risotto",
+        "title": "Tomaten Mozarella Risotto",
         "category": "Risotto"
     },
     {

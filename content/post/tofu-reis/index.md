@@ -9,6 +9,6 @@ title: Tofu Reis
 ---
 
 
-> Wo gefunden? Im Kochbuch 'Emmi kocht einfach: 75 vegetarische Rezepte' auf Seite 26.
+> Wo gefunden? Im Kochbuch 'Emmi kocht einfach: 75 vegetarische Rezepte' auf Seite 117.
 
 Guten Appetit! :)
