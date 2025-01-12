@@ -1,7 +1,7 @@
 ---
 categories:
 - "Fr\xFChst\xFCck"
-date: '2024-01-10 00:00:00'
+date: '2025-01-10 00:00:00'
 image: IMG_9626.JPEG
 slug: omlette-wrap
 tags: []
