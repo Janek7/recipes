@@ -1,8 +1,8 @@
 // This is only test data
 //const exampleRecipesData = [
-    // {"slug": "brokoli-suppe", "title": "Brokoli Suppe", "category": "Suppe"},
-    // {"slug": "reisauflauf", "title": "Reisauflauf", "category": "Auflauf"},
-    // {"slug": "spinatlasagne", "title": "Spinatlasagne", "category": "Auflauf"}
+    // {"slug": "brokoli-suppe", "title": "Brokoli Suppe", "category": "Suppe", "preview": "..."},
+    // {"slug": "reisauflauf", "title": "Reisauflauf", "category": "Auflauf", "preview": "..."},
+    // {"slug": "spinatlasagne", "title": "Spinatlasagne", "category": "Auflauf", "preview": "..."}
 //];
 
 // Real data is injected by python script process_recipe_data.py into recipesData
@@ -75,7 +75,11 @@ function editSearchResultElement(selectedRecipe) {
     var titleHeader = document.getElementById("proposal-title");
     titleHeader.innerText = selectedRecipe.title;
 
-    // 3) Update href to recipe post
+    // 3) Update preview
+    var titleHeader = document.getElementById("proposal-preview");
+    titleHeader.innerText = selectedRecipe.preview;
+
+    // 4) Update href to recipe post
     var titleHeader = document.getElementById("proposal-ref");
     titleHeader.setAttribute("href", "../p/" + selectedRecipe.slug);
 

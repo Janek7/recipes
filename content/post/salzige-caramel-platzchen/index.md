@@ -9,6 +9,6 @@ title: "Salzige Caramel Pl\xE4tzchen"
 ---
 
 
-> Wo gefunden? Im Internet.
+> Wo gefunden? Im Internet unter [vikendovepeceni.cz > 'Arašídová kolečka se slaným karamelem - Víkendové pečení'](https://vikendovepeceni.cz/2015/12/arasidova-kolecka-se-slanym-karamelem/).
 
 Guten Appetit! :)

@@ -2,7 +2,7 @@
 categories:
 - Weihnachten
 date: '2024-12-05 00:00:00'
-image: 970FA6E5-50C3-4A96-81E4-F6F6ED907F39
+image: 970FA6E5-50C3-4A96-81E4-F6F6ED907F39.JPG
 slug: froschmauler
 tags: []
 title: "Froschm\xE4uler"

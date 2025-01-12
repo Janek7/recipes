@@ -92,16 +92,20 @@ def format_recipe_data(recipe_row: pd.Series) -> Tuple[Dict, str]:
 
     # 2c) source
     source = None
+    source_simple = None
+
     # - cookbook recipe
     if recipe_row['Source'] in SOURCE_BOOKS:
+        source_simple = f"Im Kochbuch '{recipe_row['Source']}'."
         if pd.notna(recipe_row['Source Link']):
             source = f"Im Kochbuch '{recipe_row['Source']}' auf Seite {recipe_row['Source Link']}."
         else:
-            source = f"Im Kochbuch '{recipe_row['Source']}'."
+            source = source_simple
 
     
     # - PDF cookbook recipe
     elif recipe_row['Source'] == SOURCE_COOKBOOK:
+        source_simple = f"In unserem Kochbuch von 2021."
         if pd.notna(recipe_row['Source Link']):
             source = f"In unserem [Kochbuch]({COOK_BOOK_URL}) von 2021 auf Seite {recipe_row['Source Link']}."
         else:
@@ -109,39 +113,46 @@ def format_recipe_data(recipe_row: pd.Series) -> Tuple[Dict, str]:
     
     # - Internet recipe
     elif recipe_row['Source'] == SOURCE_INTERNET:
+        source_simple = "Im Internet."
         if pd.notna(recipe_row['Source Link']):
             page_domain = extract_domain(recipe_row['Source Link'])
             page_title = get_page_title(recipe_row['Source Link'])
             page_text = page_domain + f" > '{page_title}'" if page_title else ''
             source = f"Im Internet unter [{page_text}]({recipe_row['Source Link']})."
         else:
-            source = "Im Internet."
+            source = source_simple
     
     # - Instagram recipe
     elif recipe_row['Source'] == SOURCE_INSTAGRAM:
+        source_simple = "Auf Instagram."
         if pd.notna(recipe_row['Source Link']):
             instagram_user = get_instagram_username(recipe_row['Source Link'])
             source = f"Auf Instagram bei [{instagram_user}]({recipe_row['Source Link']})."
         else: 
-            source = "Auf Instagram."
+            source = source_simple
 
     # - KptnCook
     elif recipe_row['Source'] == SOURCE_KPTNCOOK:
+        source_simple = "In der KptnCook App."
         if pd.notna(recipe_row['Source Link']):
             page_domain = extract_domain(recipe_row['Source Link'])
             page_title = get_page_title(recipe_row['Source Link'])
             page_text = page_domain + f" > '{page_title}'" if page_title else ''
             source = f"In der KptnCook App: [{page_text}]({recipe_row['Source Link']})."
         else:
-            source = "In der KptnCook App."
+            source = source_simple
     
     # - Family recipe
     elif recipe_row['Source'] == SOURCE_INSTAGRAM:
         source = "Das ist ein Familienrezept."
+        source_simple = source
     
     else: 
         source = recipe_row['Source']
+        source_simple = source
+
     soure_formatted = f"> Wo gefunden? {source}"
+    source_simple_formatted = f"Wo gefunden? {source_simple}"
 
     # 2d) additional fotos
     fotos_formatted = ""
@@ -157,6 +168,8 @@ def format_recipe_data(recipe_row: pd.Series) -> Tuple[Dict, str]:
     if fotos_formatted: text_markdown += "\n" + fotos_formatted + "\n"
     if soure_formatted: text_markdown += "\n" + soure_formatted + "\n"
     text_markdown += "\nGuten Appetit! :)"
+
+    recipe_dict['preview'] = f"{desc_formatted + ' ' if desc_formatted else ''}{time_formatted + ' ' if time_formatted else ''}{source_simple_formatted} Guten Appetit! :)"
 
     return recipe_dict, text_markdown
 
@@ -176,7 +189,9 @@ def generate_recipe_post(recipe_data: Dict, markdown_text: str) -> str:
     post_index_file = f"{post_folder}\\index.md"
 
     # 2) prepare string to write
+    recipe_data = recipe_data.copy()
     print(recipe_data)
+    recipe_data.pop("preview")  # not necessary for post
     print(yaml.dump(recipe_data, indent=4))
     file_content = "---\n" + yaml.dump(recipe_data, indent=4) + "---\n\n" + markdown_text
     # print(file_content)
@@ -215,7 +230,12 @@ def inject_recipes_into_proposal_js(recipes_data: List[Dict]) -> None:
     reads the proposal_template.js script, injects full recipe data and writes back to proposal.js
     """
     # prepare data in correct list/dict format
-    recipes_data_js = [{'slug': r['slug'], 'title': r['title'], 'category': r['categories'][0] if pd.notna(r['categories'][0]) else None} for r in recipes_data]
+    recipes_data_js = [{
+        'slug': r['slug'], 
+        'title': r['title'], 
+        'category': r['categories'][0] if pd.notna(r['categories'][0]) else None,
+        'preview': r['preview']
+    } for r in recipes_data]
     recipes_data_js_string = json.dumps(recipes_data_js, indent=4)
 
     # read template (proposal_template.js)
