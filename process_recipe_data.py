@@ -87,9 +87,13 @@ def format_recipe_data(recipe_row: pd.Series) -> Tuple[Dict, str]:
         desc_formatted = recipe_row['Description'] if pd.notna(recipe_row['Description']) else None
 
     # 2b) time
-    if recipe_row['Time'] is not None:
-        time_formatted = f"{time_icon_element} Die Zubereitung dauert ca. {int(recipe_row['Time'])} Minuten." if pd.notna(recipe_row['Time']) else None
-
+    time_formatted = None
+    time_formatted_simple = None
+    if pd.notna(recipe_row['Time']):
+        time = f"Die Zubereitung dauert ca. {int(recipe_row['Time'])} Minuten." if pd.notna(recipe_row['Time']) else None
+        time_formatted = f"{time_icon_element} {time}"
+        time_formatted_simple = time
+    
     # 2c) source
     source = None
     source_simple = None
@@ -169,7 +173,7 @@ def format_recipe_data(recipe_row: pd.Series) -> Tuple[Dict, str]:
     if soure_formatted: text_markdown += "\n" + soure_formatted + "\n"
     text_markdown += "\nGuten Appetit! :)"
 
-    recipe_dict['preview'] = f"{desc_formatted + ' ' if desc_formatted else ''}{time_formatted + ' ' if time_formatted else ''}{source_simple_formatted} Guten Appetit! :)"
+    recipe_dict['preview'] = f"{desc_formatted + ' ' if desc_formatted else ''}{time_formatted_simple + ' ' if time_formatted_simple else ''}{source_simple_formatted} Guten Appetit! :)"
 
     return recipe_dict, text_markdown
 

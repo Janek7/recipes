@@ -35,7 +35,7 @@ const recipesData = [
         "slug": "apfel-smoothie",
         "title": "Apfel Smoothie",
         "category": "Fr\u00fchst\u00fcck",
-        "preview": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"icon icon-tabler icon-tabler-clock\" width=\"17\" height=\"17\" viewBox=\"0 0 22 22\" stroke-width=\"2\" stroke=\"currentColor\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n  <path stroke=\"none\" d=\"M0 0h24v24H0z\"></path>\n  <circle cx=\"12\" cy=\"12\" r=\"9\"></circle>\n  <polyline points=\"12 7 12 12 15 15\"></polyline>\n</svg> Die Zubereitung dauert ca. 5 Minuten. Wo gefunden? Im Internet. Guten Appetit! :)"
+        "preview": "Die Zubereitung dauert ca. 5 Minuten. Wo gefunden? Im Internet. Guten Appetit! :)"
     },
     {
         "slug": "zucchini-brokkoli-suppe-",
@@ -59,7 +59,7 @@ const recipesData = [
         "slug": "dal-makhani-mit-belugalinsen",
         "title": "Dal Makhani mit Belugalinsen",
         "category": "Reis",
-        "preview": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"icon icon-tabler icon-tabler-clock\" width=\"17\" height=\"17\" viewBox=\"0 0 22 22\" stroke-width=\"2\" stroke=\"currentColor\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n  <path stroke=\"none\" d=\"M0 0h24v24H0z\"></path>\n  <circle cx=\"12\" cy=\"12\" r=\"9\"></circle>\n  <polyline points=\"12 7 12 12 15 15\"></polyline>\n</svg> Die Zubereitung dauert ca. 70 Minuten. Wo gefunden? Im Internet. Guten Appetit! :)"
+        "preview": "Die Zubereitung dauert ca. 70 Minuten. Wo gefunden? Im Internet. Guten Appetit! :)"
     },
     {
         "slug": "kartoffel-mit-dip",
@@ -83,7 +83,7 @@ const recipesData = [
         "slug": "ruhrei-mit-getrockneten-tomaten-auf-knackebrot",
         "title": "R\u00fchrei mit getrockneten Tomaten auf Kn\u00e4ckebrot",
         "category": "Fr\u00fchst\u00fcck",
-        "preview": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"icon icon-tabler icon-tabler-clock\" width=\"17\" height=\"17\" viewBox=\"0 0 22 22\" stroke-width=\"2\" stroke=\"currentColor\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n  <path stroke=\"none\" d=\"M0 0h24v24H0z\"></path>\n  <circle cx=\"12\" cy=\"12\" r=\"9\"></circle>\n  <polyline points=\"12 7 12 12 15 15\"></polyline>\n</svg> Die Zubereitung dauert ca. 15 Minuten. Wo gefunden? Im Internet. Guten Appetit! :)"
+        "preview": "Die Zubereitung dauert ca. 15 Minuten. Wo gefunden? Im Internet. Guten Appetit! :)"
     },
     {
         "slug": "froschmauler",
@@ -95,31 +95,31 @@ const recipesData = [
         "slug": "buzzerl",
         "title": "Buzzerl",
         "category": "Weihnachten",
-        "preview": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"icon icon-tabler icon-tabler-clock\" width=\"17\" height=\"17\" viewBox=\"0 0 22 22\" stroke-width=\"2\" stroke=\"currentColor\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n  <path stroke=\"none\" d=\"M0 0h24v24H0z\"></path>\n  <circle cx=\"12\" cy=\"12\" r=\"9\"></circle>\n  <polyline points=\"12 7 12 12 15 15\"></polyline>\n</svg> Die Zubereitung dauert ca. 90 Minuten. Wo gefunden? Familien Rezept Guten Appetit! :)"
+        "preview": "Die Zubereitung dauert ca. 90 Minuten. Wo gefunden? Familien Rezept Guten Appetit! :)"
     },
     {
         "slug": "kuhflecken-platzchen",
         "title": "Kuhflecken Pl\u00e4tzchen",
         "category": "Weihnachten",
-        "preview": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"icon icon-tabler icon-tabler-clock\" width=\"17\" height=\"17\" viewBox=\"0 0 22 22\" stroke-width=\"2\" stroke=\"currentColor\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n  <path stroke=\"none\" d=\"M0 0h24v24H0z\"></path>\n  <circle cx=\"12\" cy=\"12\" r=\"9\"></circle>\n  <polyline points=\"12 7 12 12 15 15\"></polyline>\n</svg> Die Zubereitung dauert ca. 60 Minuten. Wo gefunden? Im Internet. Guten Appetit! :)"
+        "preview": "Die Zubereitung dauert ca. 60 Minuten. Wo gefunden? Im Internet. Guten Appetit! :)"
     },
     {
         "slug": "vanocka",
         "title": "Vanocka",
         "category": "Weihnachten",
-        "preview": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"icon icon-tabler icon-tabler-clock\" width=\"17\" height=\"17\" viewBox=\"0 0 22 22\" stroke-width=\"2\" stroke=\"currentColor\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n  <path stroke=\"none\" d=\"M0 0h24v24H0z\"></path>\n  <circle cx=\"12\" cy=\"12\" r=\"9\"></circle>\n  <polyline points=\"12 7 12 12 15 15\"></polyline>\n</svg> Die Zubereitung dauert ca. 120 Minuten. Wo gefunden? Im Internet. Guten Appetit! :)"
+        "preview": "Die Zubereitung dauert ca. 120 Minuten. Wo gefunden? Im Internet. Guten Appetit! :)"
     },
     {
         "slug": "pistazienkipferl",
         "title": "Pistazienkipferl",
         "category": "Weihnachten",
-        "preview": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"icon icon-tabler icon-tabler-clock\" width=\"17\" height=\"17\" viewBox=\"0 0 22 22\" stroke-width=\"2\" stroke=\"currentColor\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n  <path stroke=\"none\" d=\"M0 0h24v24H0z\"></path>\n  <circle cx=\"12\" cy=\"12\" r=\"9\"></circle>\n  <polyline points=\"12 7 12 12 15 15\"></polyline>\n</svg> Die Zubereitung dauert ca. 60 Minuten. Wo gefunden? Auf Instagram. Guten Appetit! :)"
+        "preview": "Die Zubereitung dauert ca. 60 Minuten. Wo gefunden? Auf Instagram. Guten Appetit! :)"
     },
     {
         "slug": "spekulatiuskipferl-mit-mandeln",
         "title": "Spekulatiuskipferl mit Mandeln",
         "category": "Weihnachten",
-        "preview": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"icon icon-tabler icon-tabler-clock\" width=\"17\" height=\"17\" viewBox=\"0 0 22 22\" stroke-width=\"2\" stroke=\"currentColor\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n  <path stroke=\"none\" d=\"M0 0h24v24H0z\"></path>\n  <circle cx=\"12\" cy=\"12\" r=\"9\"></circle>\n  <polyline points=\"12 7 12 12 15 15\"></polyline>\n</svg> Die Zubereitung dauert ca. 60 Minuten. Wo gefunden? Im Internet. Guten Appetit! :)"
+        "preview": "Die Zubereitung dauert ca. 60 Minuten. Wo gefunden? Im Internet. Guten Appetit! :)"
     },
     {
         "slug": "kokos-barentatzen",
@@ -131,13 +131,13 @@ const recipesData = [
         "slug": "gefullte-zucchini-mit-linsenbolognese",
         "title": "Gef\u00fcllte Zucchini mit Linsenbolognese",
         "category": "Auflauf",
-        "preview": "Perfekt mit Linsenbolognese vom Vortag. Schnelle Zubereitung <svg xmlns=\"http://www.w3.org/2000/svg\" class=\"icon icon-tabler icon-tabler-clock\" width=\"17\" height=\"17\" viewBox=\"0 0 22 22\" stroke-width=\"2\" stroke=\"currentColor\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n  <path stroke=\"none\" d=\"M0 0h24v24H0z\"></path>\n  <circle cx=\"12\" cy=\"12\" r=\"9\"></circle>\n  <polyline points=\"12 7 12 12 15 15\"></polyline>\n</svg> Die Zubereitung dauert ca. 40 Minuten. Wo gefunden? Im Kochbuch 'Emmi kocht einfach: 75 vegetarische Rezepte'. Guten Appetit! :)"
+        "preview": "Perfekt mit Linsenbolognese vom Vortag. Schnelle Zubereitung Die Zubereitung dauert ca. 40 Minuten. Wo gefunden? Im Kochbuch 'Emmi kocht einfach: 75 vegetarische Rezepte'. Guten Appetit! :)"
     },
     {
         "slug": "kurbis-halusky",
         "title": "K\u00fcrbis Halu\u0161ky",
         "category": "Sonstiges",
-        "preview": "Tolles Rezept <svg xmlns=\"http://www.w3.org/2000/svg\" class=\"icon icon-tabler icon-tabler-clock\" width=\"17\" height=\"17\" viewBox=\"0 0 22 22\" stroke-width=\"2\" stroke=\"currentColor\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n  <path stroke=\"none\" d=\"M0 0h24v24H0z\"></path>\n  <circle cx=\"12\" cy=\"12\" r=\"9\"></circle>\n  <polyline points=\"12 7 12 12 15 15\"></polyline>\n</svg> Die Zubereitung dauert ca. 60 Minuten. Wo gefunden? Im Internet. Guten Appetit! :)"
+        "preview": "Tolles Rezept Die Zubereitung dauert ca. 60 Minuten. Wo gefunden? Im Internet. Guten Appetit! :)"
     },
     {
         "slug": "tomaten-mozarella-risotto",
@@ -275,7 +275,7 @@ const recipesData = [
         "slug": "ofengnocchi-mit-paprika",
         "title": "Ofen-Gnocchi mit Paprika",
         "category": "Gnocchi",
-        "preview": "Kann man jede Woche kochen und schmeckt immer gut! <svg xmlns=\"http://www.w3.org/2000/svg\" class=\"icon icon-tabler icon-tabler-clock\" width=\"17\" height=\"17\" viewBox=\"0 0 22 22\" stroke-width=\"2\" stroke=\"currentColor\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n  <path stroke=\"none\" d=\"M0 0h24v24H0z\"></path>\n  <circle cx=\"12\" cy=\"12\" r=\"9\"></circle>\n  <polyline points=\"12 7 12 12 15 15\"></polyline>\n</svg> Die Zubereitung dauert ca. 45 Minuten. Wo gefunden? In der KptnCook App. Guten Appetit! :)"
+        "preview": "Kann man jede Woche kochen und schmeckt immer gut! Die Zubereitung dauert ca. 45 Minuten. Wo gefunden? In der KptnCook App. Guten Appetit! :)"
     },
     {
         "slug": "orzo-mit-tomaten-mozarella-sauce",
@@ -293,7 +293,7 @@ const recipesData = [
         "slug": "mohn-quark-kuchen",
         "title": "Mohn Quark Kuchen",
         "category": "Backen",
-        "preview": "Mit zwei F\u00fcllungen schmeckt es sehr gut <svg xmlns=\"http://www.w3.org/2000/svg\" class=\"icon icon-tabler icon-tabler-clock\" width=\"17\" height=\"17\" viewBox=\"0 0 22 22\" stroke-width=\"2\" stroke=\"currentColor\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n  <path stroke=\"none\" d=\"M0 0h24v24H0z\"></path>\n  <circle cx=\"12\" cy=\"12\" r=\"9\"></circle>\n  <polyline points=\"12 7 12 12 15 15\"></polyline>\n</svg> Die Zubereitung dauert ca. 90 Minuten. Wo gefunden? Im Internet. Guten Appetit! :)"
+        "preview": "Mit zwei F\u00fcllungen schmeckt es sehr gut Die Zubereitung dauert ca. 90 Minuten. Wo gefunden? Im Internet. Guten Appetit! :)"
     },
     {
         "slug": "toast-mit-ei-in-der-pfanne",
@@ -311,7 +311,7 @@ const recipesData = [
         "slug": "reisauflauf",
         "title": "Reisauflauf",
         "category": "Reis",
-        "preview": "Dauert zwar lange im Ofen, kann man aber gut mit ins B\u00fcro nehmen <svg xmlns=\"http://www.w3.org/2000/svg\" class=\"icon icon-tabler icon-tabler-clock\" width=\"17\" height=\"17\" viewBox=\"0 0 22 22\" stroke-width=\"2\" stroke=\"currentColor\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n  <path stroke=\"none\" d=\"M0 0h24v24H0z\"></path>\n  <circle cx=\"12\" cy=\"12\" r=\"9\"></circle>\n  <polyline points=\"12 7 12 12 15 15\"></polyline>\n</svg> Die Zubereitung dauert ca. 70 Minuten. Wo gefunden? Im Kochbuch 'Emmi kocht einfach'. Guten Appetit! :)"
+        "preview": "Dauert zwar lange im Ofen, kann man aber gut mit ins B\u00fcro nehmen Die Zubereitung dauert ca. 70 Minuten. Wo gefunden? Im Kochbuch 'Emmi kocht einfach'. Guten Appetit! :)"
     },
     {
         "slug": "zucchini-ricotta-pasta",
@@ -347,7 +347,7 @@ const recipesData = [
         "slug": "kekse-aus-gebackpresse",
         "title": "Kekse aus Geb\u00e4ckpresse",
         "category": "Weihnachten",
-        "preview": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"icon icon-tabler icon-tabler-clock\" width=\"17\" height=\"17\" viewBox=\"0 0 22 22\" stroke-width=\"2\" stroke=\"currentColor\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n  <path stroke=\"none\" d=\"M0 0h24v24H0z\"></path>\n  <circle cx=\"12\" cy=\"12\" r=\"9\"></circle>\n  <polyline points=\"12 7 12 12 15 15\"></polyline>\n</svg> Die Zubereitung dauert ca. 60 Minuten. Wo gefunden? Im Internet. Guten Appetit! :)"
+        "preview": "Die Zubereitung dauert ca. 60 Minuten. Wo gefunden? Im Internet. Guten Appetit! :)"
     },
     {
         "slug": "barentatzen",
@@ -365,7 +365,7 @@ const recipesData = [
         "slug": "vanillekipferl",
         "title": "Vanillekipferl",
         "category": "Weihnachten",
-        "preview": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"icon icon-tabler icon-tabler-clock\" width=\"17\" height=\"17\" viewBox=\"0 0 22 22\" stroke-width=\"2\" stroke=\"currentColor\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n  <path stroke=\"none\" d=\"M0 0h24v24H0z\"></path>\n  <circle cx=\"12\" cy=\"12\" r=\"9\"></circle>\n  <polyline points=\"12 7 12 12 15 15\"></polyline>\n</svg> Die Zubereitung dauert ca. 60 Minuten. Wo gefunden? Im Internet. Guten Appetit! :)"
+        "preview": "Die Zubereitung dauert ca. 60 Minuten. Wo gefunden? Im Internet. Guten Appetit! :)"
     },
     {
         "slug": "gebrannte-mandeln",
@@ -431,7 +431,7 @@ const recipesData = [
         "slug": "reis-mit-paprika-zucchini-und-feta",
         "title": "Reis mit Paprika, Zucchini und Feta",
         "category": "Reis",
-        "preview": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"icon icon-tabler icon-tabler-clock\" width=\"17\" height=\"17\" viewBox=\"0 0 22 22\" stroke-width=\"2\" stroke=\"currentColor\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n  <path stroke=\"none\" d=\"M0 0h24v24H0z\"></path>\n  <circle cx=\"12\" cy=\"12\" r=\"9\"></circle>\n  <polyline points=\"12 7 12 12 15 15\"></polyline>\n</svg> Die Zubereitung dauert ca. 40 Minuten. Wo gefunden? Auf Instagram. Guten Appetit! :)"
+        "preview": "Die Zubereitung dauert ca. 40 Minuten. Wo gefunden? Auf Instagram. Guten Appetit! :)"
     },
     {
         "slug": "pernicek",
@@ -443,7 +443,7 @@ const recipesData = [
         "slug": "himbeer-wolkchen-torte",
         "title": "Himbeer W\u00f6lkchen Torte",
         "category": "Backen",
-        "preview": "Gibt es immer bei Oma Gitte an Ostern und zu Muttertag <svg xmlns=\"http://www.w3.org/2000/svg\" class=\"icon icon-tabler icon-tabler-clock\" width=\"17\" height=\"17\" viewBox=\"0 0 22 22\" stroke-width=\"2\" stroke=\"currentColor\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n  <path stroke=\"none\" d=\"M0 0h24v24H0z\"></path>\n  <circle cx=\"12\" cy=\"12\" r=\"9\"></circle>\n  <polyline points=\"12 7 12 12 15 15\"></polyline>\n</svg> Die Zubereitung dauert ca. 120 Minuten. Wo gefunden? Im Internet. Guten Appetit! :)"
+        "preview": "Gibt es immer bei Oma Gitte an Ostern und zu Muttertag Die Zubereitung dauert ca. 120 Minuten. Wo gefunden? Im Internet. Guten Appetit! :)"
     },
     {
         "slug": "hefe-brotchen",
@@ -593,7 +593,7 @@ const recipesData = [
         "slug": "reispfanne-mit-paprika-und-ei",
         "title": "Reispfanne mit Paprika und Ei",
         "category": "Reis",
-        "preview": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"icon icon-tabler icon-tabler-clock\" width=\"17\" height=\"17\" viewBox=\"0 0 22 22\" stroke-width=\"2\" stroke=\"currentColor\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n  <path stroke=\"none\" d=\"M0 0h24v24H0z\"></path>\n  <circle cx=\"12\" cy=\"12\" r=\"9\"></circle>\n  <polyline points=\"12 7 12 12 15 15\"></polyline>\n</svg> Die Zubereitung dauert ca. 25 Minuten. Wo gefunden? Im Internet. Guten Appetit! :)"
+        "preview": "Die Zubereitung dauert ca. 25 Minuten. Wo gefunden? Im Internet. Guten Appetit! :)"
     },
     {
         "slug": "zimtschnecken",
@@ -701,7 +701,7 @@ const recipesData = [
         "slug": "chilinudeln-mit-gemuse",
         "title": "Chili-Nudeln mit Gem\u00fcse",
         "category": "Pasta",
-        "preview": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"icon icon-tabler icon-tabler-clock\" width=\"17\" height=\"17\" viewBox=\"0 0 22 22\" stroke-width=\"2\" stroke=\"currentColor\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n  <path stroke=\"none\" d=\"M0 0h24v24H0z\"></path>\n  <circle cx=\"12\" cy=\"12\" r=\"9\"></circle>\n  <polyline points=\"12 7 12 12 15 15\"></polyline>\n</svg> Die Zubereitung dauert ca. 30 Minuten. Wo gefunden? In der KptnCook App. Guten Appetit! :)"
+        "preview": "Die Zubereitung dauert ca. 30 Minuten. Wo gefunden? In der KptnCook App. Guten Appetit! :)"
     },
     {
         "slug": "curry-maultaschenpfanne",
@@ -743,19 +743,19 @@ const recipesData = [
         "slug": "kokoslimettencurry-mit-garnelen",
         "title": "Kokos-Limetten-Curry mit Garnelen",
         "category": "Reis",
-        "preview": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"icon icon-tabler icon-tabler-clock\" width=\"17\" height=\"17\" viewBox=\"0 0 22 22\" stroke-width=\"2\" stroke=\"currentColor\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n  <path stroke=\"none\" d=\"M0 0h24v24H0z\"></path>\n  <circle cx=\"12\" cy=\"12\" r=\"9\"></circle>\n  <polyline points=\"12 7 12 12 15 15\"></polyline>\n</svg> Die Zubereitung dauert ca. 45 Minuten. Wo gefunden? In der KptnCook App. Guten Appetit! :)"
+        "preview": "Die Zubereitung dauert ca. 45 Minuten. Wo gefunden? In der KptnCook App. Guten Appetit! :)"
     },
     {
         "slug": "gnocchi-mac--cheesestyle",
         "title": "Gnocchi Mac & Cheese-Style",
         "category": "Gnocchi",
-        "preview": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"icon icon-tabler icon-tabler-clock\" width=\"17\" height=\"17\" viewBox=\"0 0 22 22\" stroke-width=\"2\" stroke=\"currentColor\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n  <path stroke=\"none\" d=\"M0 0h24v24H0z\"></path>\n  <circle cx=\"12\" cy=\"12\" r=\"9\"></circle>\n  <polyline points=\"12 7 12 12 15 15\"></polyline>\n</svg> Die Zubereitung dauert ca. 30 Minuten. Wo gefunden? In der KptnCook App. Guten Appetit! :)"
+        "preview": "Die Zubereitung dauert ca. 30 Minuten. Wo gefunden? In der KptnCook App. Guten Appetit! :)"
     },
     {
         "slug": "nudelpilzpfanne",
         "title": "Nudel-Pilz-Pfanne",
         "category": "Pasta",
-        "preview": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"icon icon-tabler icon-tabler-clock\" width=\"17\" height=\"17\" viewBox=\"0 0 22 22\" stroke-width=\"2\" stroke=\"currentColor\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n  <path stroke=\"none\" d=\"M0 0h24v24H0z\"></path>\n  <circle cx=\"12\" cy=\"12\" r=\"9\"></circle>\n  <polyline points=\"12 7 12 12 15 15\"></polyline>\n</svg> Die Zubereitung dauert ca. 30 Minuten. Wo gefunden? Im Internet. Guten Appetit! :)"
+        "preview": "Die Zubereitung dauert ca. 30 Minuten. Wo gefunden? Im Internet. Guten Appetit! :)"
     },
     {
         "slug": "burger",
@@ -803,7 +803,7 @@ const recipesData = [
         "slug": "franzosische-salat-sauce",
         "title": "Franz\u00f6sische Salat Sauce",
         "category": "Sonstiges",
-        "preview": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"icon icon-tabler icon-tabler-clock\" width=\"17\" height=\"17\" viewBox=\"0 0 22 22\" stroke-width=\"2\" stroke=\"currentColor\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n  <path stroke=\"none\" d=\"M0 0h24v24H0z\"></path>\n  <circle cx=\"12\" cy=\"12\" r=\"9\"></circle>\n  <polyline points=\"12 7 12 12 15 15\"></polyline>\n</svg> Die Zubereitung dauert ca. 5 Minuten. Wo gefunden? In unserem Kochbuch von 2021. Guten Appetit! :)"
+        "preview": "Die Zubereitung dauert ca. 5 Minuten. Wo gefunden? In unserem Kochbuch von 2021. Guten Appetit! :)"
     },
     {
         "slug": "tortelloni-mit-wurziger-tomatenkokossauce",
@@ -821,31 +821,31 @@ const recipesData = [
         "slug": "brioche",
         "title": "Brioche",
         "category": "Backen",
-        "preview": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"icon icon-tabler icon-tabler-clock\" width=\"17\" height=\"17\" viewBox=\"0 0 22 22\" stroke-width=\"2\" stroke=\"currentColor\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n  <path stroke=\"none\" d=\"M0 0h24v24H0z\"></path>\n  <circle cx=\"12\" cy=\"12\" r=\"9\"></circle>\n  <polyline points=\"12 7 12 12 15 15\"></polyline>\n</svg> Die Zubereitung dauert ca. 80 Minuten. Wo gefunden? In unserem Kochbuch von 2021. Guten Appetit! :)"
+        "preview": "Die Zubereitung dauert ca. 80 Minuten. Wo gefunden? In unserem Kochbuch von 2021. Guten Appetit! :)"
     },
     {
         "slug": "welcome-meal",
         "title": "Welcome Meal",
         "category": "Pasta",
-        "preview": "Kann mit Garden Gourmet Filetstreifen oder H\u00e4hnchen zubereitet werden <svg xmlns=\"http://www.w3.org/2000/svg\" class=\"icon icon-tabler icon-tabler-clock\" width=\"17\" height=\"17\" viewBox=\"0 0 22 22\" stroke-width=\"2\" stroke=\"currentColor\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n  <path stroke=\"none\" d=\"M0 0h24v24H0z\"></path>\n  <circle cx=\"12\" cy=\"12\" r=\"9\"></circle>\n  <polyline points=\"12 7 12 12 15 15\"></polyline>\n</svg> Die Zubereitung dauert ca. 30 Minuten. Wo gefunden? In unserem Kochbuch von 2021. Guten Appetit! :)"
+        "preview": "Kann mit Garden Gourmet Filetstreifen oder H\u00e4hnchen zubereitet werden Die Zubereitung dauert ca. 30 Minuten. Wo gefunden? In unserem Kochbuch von 2021. Guten Appetit! :)"
     },
     {
         "slug": "waldpilz-risotto",
         "title": "Waldpilz Risotto",
         "category": "Risotto",
-        "preview": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"icon icon-tabler icon-tabler-clock\" width=\"17\" height=\"17\" viewBox=\"0 0 22 22\" stroke-width=\"2\" stroke=\"currentColor\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n  <path stroke=\"none\" d=\"M0 0h24v24H0z\"></path>\n  <circle cx=\"12\" cy=\"12\" r=\"9\"></circle>\n  <polyline points=\"12 7 12 12 15 15\"></polyline>\n</svg> Die Zubereitung dauert ca. 60 Minuten. Wo gefunden? In unserem Kochbuch von 2021. Guten Appetit! :)"
+        "preview": "Die Zubereitung dauert ca. 60 Minuten. Wo gefunden? In unserem Kochbuch von 2021. Guten Appetit! :)"
     },
     {
         "slug": "champignon-sahne-nudeln",
         "title": "Champignon Sahne Nudeln",
         "category": "Pasta",
-        "preview": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"icon icon-tabler icon-tabler-clock\" width=\"17\" height=\"17\" viewBox=\"0 0 22 22\" stroke-width=\"2\" stroke=\"currentColor\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n  <path stroke=\"none\" d=\"M0 0h24v24H0z\"></path>\n  <circle cx=\"12\" cy=\"12\" r=\"9\"></circle>\n  <polyline points=\"12 7 12 12 15 15\"></polyline>\n</svg> Die Zubereitung dauert ca. 30 Minuten. Wo gefunden? In unserem Kochbuch von 2021. Guten Appetit! :)"
+        "preview": "Die Zubereitung dauert ca. 30 Minuten. Wo gefunden? In unserem Kochbuch von 2021. Guten Appetit! :)"
     },
     {
         "slug": "pancakes",
         "title": "Pancakes",
         "category": "Fr\u00fchst\u00fcck",
-        "preview": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"icon icon-tabler icon-tabler-clock\" width=\"17\" height=\"17\" viewBox=\"0 0 22 22\" stroke-width=\"2\" stroke=\"currentColor\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n  <path stroke=\"none\" d=\"M0 0h24v24H0z\"></path>\n  <circle cx=\"12\" cy=\"12\" r=\"9\"></circle>\n  <polyline points=\"12 7 12 12 15 15\"></polyline>\n</svg> Die Zubereitung dauert ca. 20 Minuten. Wo gefunden? In unserem Kochbuch von 2021. Guten Appetit! :)"
+        "preview": "Die Zubereitung dauert ca. 20 Minuten. Wo gefunden? In unserem Kochbuch von 2021. Guten Appetit! :)"
     },
     {
         "slug": "sukartoffel-chips",
@@ -863,13 +863,13 @@ const recipesData = [
         "slug": "reisnudel-pfanne",
         "title": "Reisnudel Pfanne",
         "category": "Pasta",
-        "preview": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"icon icon-tabler icon-tabler-clock\" width=\"17\" height=\"17\" viewBox=\"0 0 22 22\" stroke-width=\"2\" stroke=\"currentColor\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n  <path stroke=\"none\" d=\"M0 0h24v24H0z\"></path>\n  <circle cx=\"12\" cy=\"12\" r=\"9\"></circle>\n  <polyline points=\"12 7 12 12 15 15\"></polyline>\n</svg> Die Zubereitung dauert ca. 30 Minuten. Wo gefunden? In unserem Kochbuch von 2021. Guten Appetit! :)"
+        "preview": "Die Zubereitung dauert ca. 30 Minuten. Wo gefunden? In unserem Kochbuch von 2021. Guten Appetit! :)"
     },
     {
         "slug": "kartoffelgratin",
         "title": "Kartoffelgratin",
         "category": "Sonstiges",
-        "preview": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"icon icon-tabler icon-tabler-clock\" width=\"17\" height=\"17\" viewBox=\"0 0 22 22\" stroke-width=\"2\" stroke=\"currentColor\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n  <path stroke=\"none\" d=\"M0 0h24v24H0z\"></path>\n  <circle cx=\"12\" cy=\"12\" r=\"9\"></circle>\n  <polyline points=\"12 7 12 12 15 15\"></polyline>\n</svg> Die Zubereitung dauert ca. 40 Minuten. Wo gefunden? In unserem Kochbuch von 2021. Guten Appetit! :)"
+        "preview": "Die Zubereitung dauert ca. 40 Minuten. Wo gefunden? In unserem Kochbuch von 2021. Guten Appetit! :)"
     },
     {
         "slug": "schokoschnecken",
@@ -881,19 +881,19 @@ const recipesData = [
         "slug": "penne-allarrabbiata",
         "title": "Penne all\u2019arrabbiata",
         "category": "Pasta",
-        "preview": "Originalrezept von Sally <svg xmlns=\"http://www.w3.org/2000/svg\" class=\"icon icon-tabler icon-tabler-clock\" width=\"17\" height=\"17\" viewBox=\"0 0 22 22\" stroke-width=\"2\" stroke=\"currentColor\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n  <path stroke=\"none\" d=\"M0 0h24v24H0z\"></path>\n  <circle cx=\"12\" cy=\"12\" r=\"9\"></circle>\n  <polyline points=\"12 7 12 12 15 15\"></polyline>\n</svg> Die Zubereitung dauert ca. 30 Minuten. Wo gefunden? In unserem Kochbuch von 2021. Guten Appetit! :)"
+        "preview": "Originalrezept von Sally Die Zubereitung dauert ca. 30 Minuten. Wo gefunden? In unserem Kochbuch von 2021. Guten Appetit! :)"
     },
     {
         "slug": "maulwurfkuchen",
         "title": "Maulwurfkuchen",
         "category": "Backen",
-        "preview": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"icon icon-tabler icon-tabler-clock\" width=\"17\" height=\"17\" viewBox=\"0 0 22 22\" stroke-width=\"2\" stroke=\"currentColor\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n  <path stroke=\"none\" d=\"M0 0h24v24H0z\"></path>\n  <circle cx=\"12\" cy=\"12\" r=\"9\"></circle>\n  <polyline points=\"12 7 12 12 15 15\"></polyline>\n</svg> Die Zubereitung dauert ca. 120 Minuten. Wo gefunden? In unserem Kochbuch von 2021. Guten Appetit! :)"
+        "preview": "Die Zubereitung dauert ca. 120 Minuten. Wo gefunden? In unserem Kochbuch von 2021. Guten Appetit! :)"
     },
     {
         "slug": "reis-mit-curry-sauce",
         "title": "Reis mit Curry Sauce",
         "category": "Reis",
-        "preview": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"icon icon-tabler icon-tabler-clock\" width=\"17\" height=\"17\" viewBox=\"0 0 22 22\" stroke-width=\"2\" stroke=\"currentColor\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n  <path stroke=\"none\" d=\"M0 0h24v24H0z\"></path>\n  <circle cx=\"12\" cy=\"12\" r=\"9\"></circle>\n  <polyline points=\"12 7 12 12 15 15\"></polyline>\n</svg> Die Zubereitung dauert ca. 20 Minuten. Wo gefunden? In unserem Kochbuch von 2021. Guten Appetit! :)"
+        "preview": "Die Zubereitung dauert ca. 20 Minuten. Wo gefunden? In unserem Kochbuch von 2021. Guten Appetit! :)"
     },
     {
         "slug": "apfelstrudel",
@@ -905,73 +905,73 @@ const recipesData = [
         "slug": "pesto-kartoffeln",
         "title": "Pesto Kartoffeln",
         "category": "Sonstiges",
-        "preview": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"icon icon-tabler icon-tabler-clock\" width=\"17\" height=\"17\" viewBox=\"0 0 22 22\" stroke-width=\"2\" stroke=\"currentColor\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n  <path stroke=\"none\" d=\"M0 0h24v24H0z\"></path>\n  <circle cx=\"12\" cy=\"12\" r=\"9\"></circle>\n  <polyline points=\"12 7 12 12 15 15\"></polyline>\n</svg> Die Zubereitung dauert ca. 30 Minuten. Wo gefunden? In unserem Kochbuch von 2021. Guten Appetit! :)"
+        "preview": "Die Zubereitung dauert ca. 30 Minuten. Wo gefunden? In unserem Kochbuch von 2021. Guten Appetit! :)"
     },
     {
         "slug": "gnocchi-spinat-huhnchen-curry-auflauf",
         "title": "Gnocchi Spinat H\u00fchnchen Curry Auflauf",
         "category": "Gnocchi",
-        "preview": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"icon icon-tabler icon-tabler-clock\" width=\"17\" height=\"17\" viewBox=\"0 0 22 22\" stroke-width=\"2\" stroke=\"currentColor\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n  <path stroke=\"none\" d=\"M0 0h24v24H0z\"></path>\n  <circle cx=\"12\" cy=\"12\" r=\"9\"></circle>\n  <polyline points=\"12 7 12 12 15 15\"></polyline>\n</svg> Die Zubereitung dauert ca. 50 Minuten. Wo gefunden? In unserem Kochbuch von 2021. Guten Appetit! :)"
+        "preview": "Die Zubereitung dauert ca. 50 Minuten. Wo gefunden? In unserem Kochbuch von 2021. Guten Appetit! :)"
     },
     {
         "slug": "mac-and-cheese",
         "title": "Mac and Cheese",
         "category": "Pasta",
-        "preview": "Gekocht an Silvester 2021 im Salvator Hotel <svg xmlns=\"http://www.w3.org/2000/svg\" class=\"icon icon-tabler icon-tabler-clock\" width=\"17\" height=\"17\" viewBox=\"0 0 22 22\" stroke-width=\"2\" stroke=\"currentColor\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n  <path stroke=\"none\" d=\"M0 0h24v24H0z\"></path>\n  <circle cx=\"12\" cy=\"12\" r=\"9\"></circle>\n  <polyline points=\"12 7 12 12 15 15\"></polyline>\n</svg> Die Zubereitung dauert ca. 75 Minuten. Wo gefunden? In unserem Kochbuch von 2021. Guten Appetit! :)"
+        "preview": "Gekocht an Silvester 2021 im Salvator Hotel Die Zubereitung dauert ca. 75 Minuten. Wo gefunden? In unserem Kochbuch von 2021. Guten Appetit! :)"
     },
     {
         "slug": "vegetarischer-gnocchi-auflauf",
         "title": "Vegetarischer Gnocchi Auflauf",
         "category": "Gnocchi",
-        "preview": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"icon icon-tabler icon-tabler-clock\" width=\"17\" height=\"17\" viewBox=\"0 0 22 22\" stroke-width=\"2\" stroke=\"currentColor\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n  <path stroke=\"none\" d=\"M0 0h24v24H0z\"></path>\n  <circle cx=\"12\" cy=\"12\" r=\"9\"></circle>\n  <polyline points=\"12 7 12 12 15 15\"></polyline>\n</svg> Die Zubereitung dauert ca. 40 Minuten. Wo gefunden? In unserem Kochbuch von 2021. Guten Appetit! :)"
+        "preview": "Die Zubereitung dauert ca. 40 Minuten. Wo gefunden? In unserem Kochbuch von 2021. Guten Appetit! :)"
     },
     {
         "slug": "toast-mit-ruhrei-und-tomaten",
         "title": "Toast mit R\u00fchrei und Tomaten",
         "category": "Fr\u00fchst\u00fcck",
-        "preview": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"icon icon-tabler icon-tabler-clock\" width=\"17\" height=\"17\" viewBox=\"0 0 22 22\" stroke-width=\"2\" stroke=\"currentColor\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n  <path stroke=\"none\" d=\"M0 0h24v24H0z\"></path>\n  <circle cx=\"12\" cy=\"12\" r=\"9\"></circle>\n  <polyline points=\"12 7 12 12 15 15\"></polyline>\n</svg> Die Zubereitung dauert ca. 15 Minuten. Wo gefunden? In unserem Kochbuch von 2021. Guten Appetit! :)"
+        "preview": "Die Zubereitung dauert ca. 15 Minuten. Wo gefunden? In unserem Kochbuch von 2021. Guten Appetit! :)"
     },
     {
         "slug": "garnelen-spaghetti",
         "title": "Garnelen Spaghetti",
         "category": "Pasta",
-        "preview": "Spaghetti Aglio e Olio mit gebratenen Garnelen und Ajvar <svg xmlns=\"http://www.w3.org/2000/svg\" class=\"icon icon-tabler icon-tabler-clock\" width=\"17\" height=\"17\" viewBox=\"0 0 22 22\" stroke-width=\"2\" stroke=\"currentColor\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n  <path stroke=\"none\" d=\"M0 0h24v24H0z\"></path>\n  <circle cx=\"12\" cy=\"12\" r=\"9\"></circle>\n  <polyline points=\"12 7 12 12 15 15\"></polyline>\n</svg> Die Zubereitung dauert ca. 20 Minuten. Wo gefunden? In unserem Kochbuch von 2021. Guten Appetit! :)"
+        "preview": "Spaghetti Aglio e Olio mit gebratenen Garnelen und Ajvar Die Zubereitung dauert ca. 20 Minuten. Wo gefunden? In unserem Kochbuch von 2021. Guten Appetit! :)"
     },
     {
         "slug": "bohnenkraut-kartoffel-feta-pfanne",
         "title": "Bohnenkraut Kartoffel Feta Pfanne",
         "category": "Sonstiges",
-        "preview": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"icon icon-tabler icon-tabler-clock\" width=\"17\" height=\"17\" viewBox=\"0 0 22 22\" stroke-width=\"2\" stroke=\"currentColor\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n  <path stroke=\"none\" d=\"M0 0h24v24H0z\"></path>\n  <circle cx=\"12\" cy=\"12\" r=\"9\"></circle>\n  <polyline points=\"12 7 12 12 15 15\"></polyline>\n</svg> Die Zubereitung dauert ca. 50 Minuten. Wo gefunden? In unserem Kochbuch von 2021. Guten Appetit! :)"
+        "preview": "Die Zubereitung dauert ca. 50 Minuten. Wo gefunden? In unserem Kochbuch von 2021. Guten Appetit! :)"
     },
     {
         "slug": "macaroni-gemuse-auflauf",
         "title": "Macaroni Gem\u00fcse Auflauf",
         "category": "Auflauf",
-        "preview": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"icon icon-tabler icon-tabler-clock\" width=\"17\" height=\"17\" viewBox=\"0 0 22 22\" stroke-width=\"2\" stroke=\"currentColor\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n  <path stroke=\"none\" d=\"M0 0h24v24H0z\"></path>\n  <circle cx=\"12\" cy=\"12\" r=\"9\"></circle>\n  <polyline points=\"12 7 12 12 15 15\"></polyline>\n</svg> Die Zubereitung dauert ca. 50 Minuten. Wo gefunden? In unserem Kochbuch von 2021. Guten Appetit! :)"
+        "preview": "Die Zubereitung dauert ca. 50 Minuten. Wo gefunden? In unserem Kochbuch von 2021. Guten Appetit! :)"
     },
     {
         "slug": "curry-penne",
         "title": "Curry Penne",
         "category": "Pasta",
-        "preview": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"icon icon-tabler icon-tabler-clock\" width=\"17\" height=\"17\" viewBox=\"0 0 22 22\" stroke-width=\"2\" stroke=\"currentColor\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n  <path stroke=\"none\" d=\"M0 0h24v24H0z\"></path>\n  <circle cx=\"12\" cy=\"12\" r=\"9\"></circle>\n  <polyline points=\"12 7 12 12 15 15\"></polyline>\n</svg> Die Zubereitung dauert ca. 30 Minuten. Wo gefunden? In unserem Kochbuch von 2021. Guten Appetit! :)"
+        "preview": "Die Zubereitung dauert ca. 30 Minuten. Wo gefunden? In unserem Kochbuch von 2021. Guten Appetit! :)"
     },
     {
         "slug": "konigsberger",
         "title": "K\u00f6nigsberger",
         "category": "Sonstiges",
-        "preview": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"icon icon-tabler icon-tabler-clock\" width=\"17\" height=\"17\" viewBox=\"0 0 22 22\" stroke-width=\"2\" stroke=\"currentColor\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n  <path stroke=\"none\" d=\"M0 0h24v24H0z\"></path>\n  <circle cx=\"12\" cy=\"12\" r=\"9\"></circle>\n  <polyline points=\"12 7 12 12 15 15\"></polyline>\n</svg> Die Zubereitung dauert ca. 60 Minuten. Wo gefunden? In unserem Kochbuch von 2021. Guten Appetit! :)"
+        "preview": "Die Zubereitung dauert ca. 60 Minuten. Wo gefunden? In unserem Kochbuch von 2021. Guten Appetit! :)"
     },
     {
         "slug": "nussschnecken",
         "title": "Nussschnecken",
         "category": "Backen",
-        "preview": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"icon icon-tabler icon-tabler-clock\" width=\"17\" height=\"17\" viewBox=\"0 0 22 22\" stroke-width=\"2\" stroke=\"currentColor\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n  <path stroke=\"none\" d=\"M0 0h24v24H0z\"></path>\n  <circle cx=\"12\" cy=\"12\" r=\"9\"></circle>\n  <polyline points=\"12 7 12 12 15 15\"></polyline>\n</svg> Die Zubereitung dauert ca. 110 Minuten. Wo gefunden? In unserem Kochbuch von 2021. Guten Appetit! :)"
+        "preview": "Die Zubereitung dauert ca. 110 Minuten. Wo gefunden? In unserem Kochbuch von 2021. Guten Appetit! :)"
     },
     {
         "slug": "toast-mit-gebackenem-feta",
         "title": "Toast mit gebackenem Feta",
         "category": "Sonstiges",
-        "preview": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"icon icon-tabler icon-tabler-clock\" width=\"17\" height=\"17\" viewBox=\"0 0 22 22\" stroke-width=\"2\" stroke=\"currentColor\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n  <path stroke=\"none\" d=\"M0 0h24v24H0z\"></path>\n  <circle cx=\"12\" cy=\"12\" r=\"9\"></circle>\n  <polyline points=\"12 7 12 12 15 15\"></polyline>\n</svg> Die Zubereitung dauert ca. 15 Minuten. Wo gefunden? In unserem Kochbuch von 2021. Guten Appetit! :)"
+        "preview": "Die Zubereitung dauert ca. 15 Minuten. Wo gefunden? In unserem Kochbuch von 2021. Guten Appetit! :)"
     },
     {
         "slug": "kurbissuppe",
@@ -989,55 +989,55 @@ const recipesData = [
         "slug": "svickova",
         "title": "Svickova",
         "category": "Sonstiges",
-        "preview": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"icon icon-tabler icon-tabler-clock\" width=\"17\" height=\"17\" viewBox=\"0 0 22 22\" stroke-width=\"2\" stroke=\"currentColor\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n  <path stroke=\"none\" d=\"M0 0h24v24H0z\"></path>\n  <circle cx=\"12\" cy=\"12\" r=\"9\"></circle>\n  <polyline points=\"12 7 12 12 15 15\"></polyline>\n</svg> Die Zubereitung dauert ca. 180 Minuten. Wo gefunden? Familien Rezept Guten Appetit! :)"
+        "preview": "Die Zubereitung dauert ca. 180 Minuten. Wo gefunden? Familien Rezept Guten Appetit! :)"
     },
     {
         "slug": "gemuse-feta-auflauf",
         "title": "Gem\u00fcse Feta Auflauf",
         "category": "Auflauf",
-        "preview": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"icon icon-tabler icon-tabler-clock\" width=\"17\" height=\"17\" viewBox=\"0 0 22 22\" stroke-width=\"2\" stroke=\"currentColor\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n  <path stroke=\"none\" d=\"M0 0h24v24H0z\"></path>\n  <circle cx=\"12\" cy=\"12\" r=\"9\"></circle>\n  <polyline points=\"12 7 12 12 15 15\"></polyline>\n</svg> Die Zubereitung dauert ca. 35 Minuten. Wo gefunden? In unserem Kochbuch von 2021. Guten Appetit! :)"
+        "preview": "Die Zubereitung dauert ca. 35 Minuten. Wo gefunden? In unserem Kochbuch von 2021. Guten Appetit! :)"
     },
     {
         "slug": "gemuse-spaghetti-auflauf",
         "title": "Gem\u00fcse Spaghetti Auflauf",
         "category": "Auflauf",
-        "preview": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"icon icon-tabler icon-tabler-clock\" width=\"17\" height=\"17\" viewBox=\"0 0 22 22\" stroke-width=\"2\" stroke=\"currentColor\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n  <path stroke=\"none\" d=\"M0 0h24v24H0z\"></path>\n  <circle cx=\"12\" cy=\"12\" r=\"9\"></circle>\n  <polyline points=\"12 7 12 12 15 15\"></polyline>\n</svg> Die Zubereitung dauert ca. 30 Minuten. Wo gefunden? In unserem Kochbuch von 2021. Guten Appetit! :)"
+        "preview": "Die Zubereitung dauert ca. 30 Minuten. Wo gefunden? In unserem Kochbuch von 2021. Guten Appetit! :)"
     },
     {
         "slug": "flammkuchen",
         "title": "Flammkuchen",
         "category": "Sonstiges",
-        "preview": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"icon icon-tabler icon-tabler-clock\" width=\"17\" height=\"17\" viewBox=\"0 0 22 22\" stroke-width=\"2\" stroke=\"currentColor\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n  <path stroke=\"none\" d=\"M0 0h24v24H0z\"></path>\n  <circle cx=\"12\" cy=\"12\" r=\"9\"></circle>\n  <polyline points=\"12 7 12 12 15 15\"></polyline>\n</svg> Die Zubereitung dauert ca. 75 Minuten. Wo gefunden? In unserem Kochbuch von 2021. Guten Appetit! :)"
+        "preview": "Die Zubereitung dauert ca. 75 Minuten. Wo gefunden? In unserem Kochbuch von 2021. Guten Appetit! :)"
     },
     {
         "slug": "pizza",
         "title": "Pizza",
         "category": "Sonstiges",
-        "preview": "Katharians Rezept <svg xmlns=\"http://www.w3.org/2000/svg\" class=\"icon icon-tabler icon-tabler-clock\" width=\"17\" height=\"17\" viewBox=\"0 0 22 22\" stroke-width=\"2\" stroke=\"currentColor\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n  <path stroke=\"none\" d=\"M0 0h24v24H0z\"></path>\n  <circle cx=\"12\" cy=\"12\" r=\"9\"></circle>\n  <polyline points=\"12 7 12 12 15 15\"></polyline>\n</svg> Die Zubereitung dauert ca. 45 Minuten. Wo gefunden? In unserem Kochbuch von 2021. Guten Appetit! :)"
+        "preview": "Katharians Rezept Die Zubereitung dauert ca. 45 Minuten. Wo gefunden? In unserem Kochbuch von 2021. Guten Appetit! :)"
     },
     {
         "slug": "tomatenreis",
         "title": "Tomatenreis",
         "category": "Reis",
-        "preview": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"icon icon-tabler icon-tabler-clock\" width=\"17\" height=\"17\" viewBox=\"0 0 22 22\" stroke-width=\"2\" stroke=\"currentColor\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n  <path stroke=\"none\" d=\"M0 0h24v24H0z\"></path>\n  <circle cx=\"12\" cy=\"12\" r=\"9\"></circle>\n  <polyline points=\"12 7 12 12 15 15\"></polyline>\n</svg> Die Zubereitung dauert ca. 20 Minuten. Wo gefunden? In unserem Kochbuch von 2021. Guten Appetit! :)"
+        "preview": "Die Zubereitung dauert ca. 20 Minuten. Wo gefunden? In unserem Kochbuch von 2021. Guten Appetit! :)"
     },
     {
         "slug": "hahnchen-gyros",
         "title": "H\u00e4hnchen Gyros",
         "category": "Reis",
-        "preview": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"icon icon-tabler icon-tabler-clock\" width=\"17\" height=\"17\" viewBox=\"0 0 22 22\" stroke-width=\"2\" stroke=\"currentColor\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n  <path stroke=\"none\" d=\"M0 0h24v24H0z\"></path>\n  <circle cx=\"12\" cy=\"12\" r=\"9\"></circle>\n  <polyline points=\"12 7 12 12 15 15\"></polyline>\n</svg> Die Zubereitung dauert ca. 50 Minuten. Wo gefunden? In unserem Kochbuch von 2021. Guten Appetit! :)"
+        "preview": "Die Zubereitung dauert ca. 50 Minuten. Wo gefunden? In unserem Kochbuch von 2021. Guten Appetit! :)"
     },
     {
         "slug": "hahnchen-curry",
         "title": "H\u00e4hnchen Curry",
         "category": "Reis",
-        "preview": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"icon icon-tabler icon-tabler-clock\" width=\"17\" height=\"17\" viewBox=\"0 0 22 22\" stroke-width=\"2\" stroke=\"currentColor\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n  <path stroke=\"none\" d=\"M0 0h24v24H0z\"></path>\n  <circle cx=\"12\" cy=\"12\" r=\"9\"></circle>\n  <polyline points=\"12 7 12 12 15 15\"></polyline>\n</svg> Die Zubereitung dauert ca. 30 Minuten. Wo gefunden? In unserem Kochbuch von 2021. Guten Appetit! :)"
+        "preview": "Die Zubereitung dauert ca. 30 Minuten. Wo gefunden? In unserem Kochbuch von 2021. Guten Appetit! :)"
     },
     {
         "slug": "wraps",
         "title": "Wraps",
         "category": "Sonstiges",
-        "preview": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"icon icon-tabler icon-tabler-clock\" width=\"17\" height=\"17\" viewBox=\"0 0 22 22\" stroke-width=\"2\" stroke=\"currentColor\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n  <path stroke=\"none\" d=\"M0 0h24v24H0z\"></path>\n  <circle cx=\"12\" cy=\"12\" r=\"9\"></circle>\n  <polyline points=\"12 7 12 12 15 15\"></polyline>\n</svg> Die Zubereitung dauert ca. 20 Minuten. Wo gefunden? In unserem Kochbuch von 2021. Guten Appetit! :)"
+        "preview": "Die Zubereitung dauert ca. 20 Minuten. Wo gefunden? In unserem Kochbuch von 2021. Guten Appetit! :)"
     },
     {
         "slug": "waffel-kirsch-desert",
@@ -1049,37 +1049,37 @@ const recipesData = [
         "slug": "bananenbrot",
         "title": "Bananenbrot",
         "category": "Backen",
-        "preview": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"icon icon-tabler icon-tabler-clock\" width=\"17\" height=\"17\" viewBox=\"0 0 22 22\" stroke-width=\"2\" stroke=\"currentColor\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n  <path stroke=\"none\" d=\"M0 0h24v24H0z\"></path>\n  <circle cx=\"12\" cy=\"12\" r=\"9\"></circle>\n  <polyline points=\"12 7 12 12 15 15\"></polyline>\n</svg> Die Zubereitung dauert ca. 80 Minuten. Wo gefunden? In unserem Kochbuch von 2021. Guten Appetit! :)"
+        "preview": "Die Zubereitung dauert ca. 80 Minuten. Wo gefunden? In unserem Kochbuch von 2021. Guten Appetit! :)"
     },
     {
         "slug": "gnocchis-mit-geschmolzenen-tomaten",
         "title": "Gnocchis mit geschmolzenen Tomaten",
         "category": "Gnocchi",
-        "preview": "Janeks erstes selbst ausprobiertes Rezept (und \u00fcberzeugt noch immer) <svg xmlns=\"http://www.w3.org/2000/svg\" class=\"icon icon-tabler icon-tabler-clock\" width=\"17\" height=\"17\" viewBox=\"0 0 22 22\" stroke-width=\"2\" stroke=\"currentColor\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n  <path stroke=\"none\" d=\"M0 0h24v24H0z\"></path>\n  <circle cx=\"12\" cy=\"12\" r=\"9\"></circle>\n  <polyline points=\"12 7 12 12 15 15\"></polyline>\n</svg> Die Zubereitung dauert ca. 20 Minuten. Wo gefunden? In unserem Kochbuch von 2021. Guten Appetit! :)"
+        "preview": "Janeks erstes selbst ausprobiertes Rezept (und \u00fcberzeugt noch immer) Die Zubereitung dauert ca. 20 Minuten. Wo gefunden? In unserem Kochbuch von 2021. Guten Appetit! :)"
     },
     {
         "slug": "tortelliniauflauf",
         "title": "Tortelliniauflauf",
         "category": "Auflauf",
-        "preview": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"icon icon-tabler icon-tabler-clock\" width=\"17\" height=\"17\" viewBox=\"0 0 22 22\" stroke-width=\"2\" stroke=\"currentColor\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n  <path stroke=\"none\" d=\"M0 0h24v24H0z\"></path>\n  <circle cx=\"12\" cy=\"12\" r=\"9\"></circle>\n  <polyline points=\"12 7 12 12 15 15\"></polyline>\n</svg> Die Zubereitung dauert ca. 65 Minuten. Wo gefunden? In unserem Kochbuch von 2021. Guten Appetit! :)"
+        "preview": "Die Zubereitung dauert ca. 65 Minuten. Wo gefunden? In unserem Kochbuch von 2021. Guten Appetit! :)"
     },
     {
         "slug": "feta-taschen",
         "title": "Feta Taschen",
         "category": "Sonstiges",
-        "preview": "Feta Taschen aus Bl\u00e4tterteig - Guter Partysnack zum Mitbringen <svg xmlns=\"http://www.w3.org/2000/svg\" class=\"icon icon-tabler icon-tabler-clock\" width=\"17\" height=\"17\" viewBox=\"0 0 22 22\" stroke-width=\"2\" stroke=\"currentColor\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n  <path stroke=\"none\" d=\"M0 0h24v24H0z\"></path>\n  <circle cx=\"12\" cy=\"12\" r=\"9\"></circle>\n  <polyline points=\"12 7 12 12 15 15\"></polyline>\n</svg> Die Zubereitung dauert ca. 20 Minuten. Wo gefunden? In unserem Kochbuch von 2021. Guten Appetit! :)"
+        "preview": "Feta Taschen aus Bl\u00e4tterteig - Guter Partysnack zum Mitbringen Die Zubereitung dauert ca. 20 Minuten. Wo gefunden? In unserem Kochbuch von 2021. Guten Appetit! :)"
     },
     {
         "slug": "spaghetti-carbonara",
         "title": "Spaghetti Carbonara",
         "category": "Pasta",
-        "preview": "Steffis Rezept und Janeks erster Kochversuch <svg xmlns=\"http://www.w3.org/2000/svg\" class=\"icon icon-tabler icon-tabler-clock\" width=\"17\" height=\"17\" viewBox=\"0 0 22 22\" stroke-width=\"2\" stroke=\"currentColor\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n  <path stroke=\"none\" d=\"M0 0h24v24H0z\"></path>\n  <circle cx=\"12\" cy=\"12\" r=\"9\"></circle>\n  <polyline points=\"12 7 12 12 15 15\"></polyline>\n</svg> Die Zubereitung dauert ca. 30 Minuten. Wo gefunden? In unserem Kochbuch von 2021. Guten Appetit! :)"
+        "preview": "Steffis Rezept und Janeks erster Kochversuch Die Zubereitung dauert ca. 30 Minuten. Wo gefunden? In unserem Kochbuch von 2021. Guten Appetit! :)"
     },
     {
         "slug": "sandwich-toasts",
         "title": "Sandwich Toasts",
         "category": "Sonstiges",
-        "preview": "<svg xmlns=\"http://www.w3.org/2000/svg\" class=\"icon icon-tabler icon-tabler-clock\" width=\"17\" height=\"17\" viewBox=\"0 0 22 22\" stroke-width=\"2\" stroke=\"currentColor\" fill=\"none\" stroke-linecap=\"round\" stroke-linejoin=\"round\">\n  <path stroke=\"none\" d=\"M0 0h24v24H0z\"></path>\n  <circle cx=\"12\" cy=\"12\" r=\"9\"></circle>\n  <polyline points=\"12 7 12 12 15 15\"></polyline>\n</svg> Die Zubereitung dauert ca. 20 Minuten. Wo gefunden? In unserem Kochbuch von 2021. Guten Appetit! :)"
+        "preview": "Die Zubereitung dauert ca. 20 Minuten. Wo gefunden? In unserem Kochbuch von 2021. Guten Appetit! :)"
     }
 ];
 
