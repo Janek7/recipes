@@ -266,7 +266,7 @@ def inject_categories_into_search_html(recipes_data: List[Dict]) -> None:
     category_options = "".join([f'<option value="{category}">{category}</option>\n' for category in categories])
 
     # read template (search_template.html)
-    with open('layouts\page\search_template.html', 'r') as file:
+    with open('layouts\page\search_template.html', 'r', encoding='utf-8') as file:
         search_html = file.read()
 
     # inject data
