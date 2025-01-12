@@ -273,7 +273,7 @@ def inject_categories_into_search_html(recipes_data: List[Dict]) -> None:
     search_html = search_html.replace('<option value="Placeholder">Placeholder</option>', category_options)
 
     # write to used script (search.html)
-    with open('layouts\page\search.html', 'w') as file:
+    with open('layouts\page\search.html', 'w',encoding='utf-8') as file:
         file.write(search_html)
 
 

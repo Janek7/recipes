@@ -8,6 +8,12 @@
 // Real data is injected by python script process_recipe_data.py into recipesData
 const recipesData = [
     {
+        "slug": "omlette-wrap",
+        "title": "Omlette Wrap",
+        "category": "Fr\u00fchst\u00fcck",
+        "preview": "Kommt mit Barbecue Sauce gef\u00e4hrlich Wo gefunden? Auf Instagram. Guten Appetit! :)"
+    },
+    {
         "slug": "fantakuchen",
         "title": "Fantakuchen",
         "category": "Backen",
@@ -29,19 +35,13 @@ const recipesData = [
         "slug": "smazeny-syr",
         "title": "Sma\u017een\u00fd S\u00fdr",
         "category": "Sonstiges",
-        "preview": "Zubereitet in der Hei\u00dfluftfrit\u00f6se Wo gefunden? Im Internet. Guten Appetit! :)"
+        "preview": "Zubereitet in der Hei\u00dfluftfrit\u00f6se Wo gefunden? Familien Rezept Guten Appetit! :)"
     },
     {
         "slug": "apfel-smoothie",
         "title": "Apfel Smoothie",
         "category": "Fr\u00fchst\u00fcck",
-        "preview": "Die Zubereitung dauert ca. 5 Minuten. Wo gefunden? Im Internet. Guten Appetit! :)"
-    },
-    {
-        "slug": "zucchini-brokkoli-suppe-",
-        "title": "Zucchini Brokkoli Suppe ",
-        "category": "Suppe",
-        "preview": "Wo gefunden? Im Internet. Guten Appetit! :)"
+        "preview": "Schmeckt besser mit tschechischem Joghurt als mit deutschem ;) Die Zubereitung dauert ca. 5 Minuten. Wo gefunden? Im Internet. Guten Appetit! :)"
     },
     {
         "slug": "focaccia",
