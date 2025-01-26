@@ -8,6 +8,42 @@
 // Real data is injected by python script process_recipe_data.py into recipesData
 const recipesData = [
     {
+        "slug": "chili-sin-carne",
+        "title": "Chili sin Carne",
+        "category": "Reis",
+        "preview": "Wo gefunden? Im Kochbuch 'Emmi kocht einfach: 75 vegetarische Rezepte'. Guten Appetit! :)"
+    },
+    {
+        "slug": "couscous-gemuse-salat",
+        "title": "Couscous Gem\u00fcse Salat",
+        "category": "Sonstiges",
+        "preview": "Schmeckt gut mit Pesto und jeglichem Gem\u00fcse Wo gefunden? Familien Rezept Guten Appetit! :)"
+    },
+    {
+        "slug": "overnight-oats-mit-quark",
+        "title": "Overnight Oats mit Quark",
+        "category": "Fr\u00fchst\u00fcck",
+        "preview": "Alle m\u00f6glichen N\u00fcsse k\u00f6nnen gehackt als Topping verwendet werden Wo gefunden? Im Internet. Guten Appetit! :)"
+    },
+    {
+        "slug": "blumenkohlsuppe",
+        "title": "Blumenkohlsuppe",
+        "category": "Suppe",
+        "preview": "Wo gefunden? Familien Rezept Guten Appetit! :)"
+    },
+    {
+        "slug": "porridge-mit-quark",
+        "title": "Porridge mit Quark",
+        "category": "Fr\u00fchst\u00fcck",
+        "preview": "Wo gefunden? Im Internet. Guten Appetit! :)"
+    },
+    {
+        "slug": "gefullte-paprika",
+        "title": "Gef\u00fcllte Paprika",
+        "category": "Reis",
+        "preview": "Kann mit Fleisch- oder Frischk\u00e4sef\u00fcllung zubereitet werden Wo gefunden? Familien Rezept Guten Appetit! :)"
+    },
+    {
         "slug": "omlette-wrap",
         "title": "Omlette Wrap",
         "category": "Fr\u00fchst\u00fcck",
@@ -329,7 +365,7 @@ const recipesData = [
         "slug": "griechischer-joghurt-kuchen-mit-beeren",
         "title": "Griechischer Joghurt Kuchen mit Beeren",
         "category": "Backen",
-        "preview": "Wo gefunden? Im Internet. Guten Appetit! :)"
+        "preview": "Wo gefunden? Im Kochbuch 'Emmi kocht einfach'. Guten Appetit! :)"
     },
     {
         "slug": "st-martins-hornchen",
