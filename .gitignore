@@ -4,3 +4,4 @@ resources
 Recipes*.xlsx
 Recipes*.csv
 test.py
+config.ini

@@ -2,3 +2,5 @@ pandas
 pyyaml
 bs4
 instaloader
+langchain
+langchain-huggingface
