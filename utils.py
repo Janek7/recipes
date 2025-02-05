@@ -21,5 +21,13 @@ def get_config() -> Dict:
 config = get_config()
 
 
+def read_file(relative_path: str) -> str:
+    """
+    read file into string
+    """
+    with open(relative_path, 'r') as file:
+        return file.read()
+
+
 if __name__ == '__main__':
     print(get_config())
