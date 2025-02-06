@@ -37,7 +37,38 @@ class Recipe(Base):
     tags = relationship("Tag", back_populates="recipe")
 
     def __repr__(self):
-        return f"Recipe {self.recipe_id}: {self.title}"
+        return f"<Recipe(id={self.recipe_id}, title='{self.title}', date={self.date}, source='{self.source}')>"
+
+
+    @classmethod
+    def insert(cls, session, obj):
+        session.add(obj)
+        session.commit()
+
+    @classmethod
+    def get_by_id(cls, session, recipe_id):
+        return session.query(cls).filter_by(recipe_id=recipe_id).first()
+
+    @classmethod
+    def get_all(cls, session):
+        return session.query(cls).all()
+
+    @classmethod
+    def update(cls, session, recipe_id, **kwargs):
+        recipe = session.query(cls).filter_by(recipe_id=recipe_id).first()
+        if recipe:
+            for key, value in kwargs.items():
+                setattr(recipe, key, value)
+            session.commit()
+        return recipe
+
+    @classmethod
+    def delete(cls, session, recipe_id):
+        recipe = session.query(cls).filter_by(recipe_id=recipe_id).first()
+        if recipe:
+            session.delete(recipe)
+            session.commit()
+        return recipe
 
 
 class Ingredient(Base):
@@ -48,6 +79,39 @@ class Ingredient(Base):
     quantity = Column(String(255))
     recipe = relationship("Recipe", back_populates="ingredients")
 
+    def __repr__(self):
+        return f"<Ingredient(id={self.ingredient_id}, name='{self.name}', quantity='{self.quantity}', recipe_id={self.recipe_id})>"
+
+    @classmethod
+    def insert(cls, session, obj):
+        session.add(obj)
+        session.commit()
+
+    @classmethod
+    def get_by_id(cls, session, ingredient_id):
+        return session.query(cls).filter_by(ingredient_id=ingredient_id).first()
+
+    @classmethod
+    def get_by_recipe_id(cls, session, recipe_id):
+        return session.query(cls).filter_by(recipe_id=recipe_id).all()
+
+    @classmethod
+    def update(cls, session, ingredient_id, **kwargs):
+        ingredient = session.query(cls).filter_by(ingredient_id=ingredient_id).first()
+        if ingredient:
+            for key, value in kwargs.items():
+                setattr(ingredient, key, value)
+            session.commit()
+        return ingredient
+
+    @classmethod
+    def delete(cls, session, ingredient_id):
+        ingredient = session.query(cls).filter_by(ingredient_id=ingredient_id).first()
+        if ingredient:
+            session.delete(ingredient)
+            session.commit()
+        return ingredient
+
 
 class Instruction(Base):
     __tablename__ = "Instruction"
@@ -57,6 +121,39 @@ class Instruction(Base):
     order_number = Column(Integer)
     recipe = relationship("Recipe", back_populates="instructions")
 
+    def __repr__(self):
+        return f"<Instruction(id={self.instruction_id}, order_number={self.order_number}, instruction='{self.instruction[:50]}...')>"
+
+    @classmethod
+    def insert(cls, session, obj):
+        session.add(obj)
+        session.commit()
+
+    @classmethod
+    def get_by_id(cls, session, instruction_id):
+        return session.query(cls).filter_by(instruction_id=instruction_id).first()
+
+    @classmethod
+    def get_by_recipe_id(cls, session, recipe_id):
+        return session.query(cls).filter_by(recipe_id=recipe_id).all()
+
+    @classmethod
+    def update(cls, session, instruction_id, **kwargs):
+        instruction = session.query(cls).filter_by(instruction_id=instruction_id).first()
+        if instruction:
+            for key, value in kwargs.items():
+                setattr(instruction, key, value)
+            session.commit()
+        return instruction
+
+    @classmethod
+    def delete(cls, session, instruction_id):
+        instruction = session.query(cls).filter_by(instruction_id=instruction_id).first()
+        if instruction:
+            session.delete(instruction)
+            session.commit()
+        return instruction
+
 
 class Image(Base):
     __tablename__ = "Image"
@@ -65,6 +162,39 @@ class Image(Base):
     file_name = Column(String(255), nullable=False)
     recipe = relationship("Recipe", back_populates="images")
 
+    def __repr__(self):
+        return f"<Image(id={self.foto_id}, file_name='{self.file_name}', recipe_id={self.recipe_id})>"
+
+    @classmethod
+    def insert(cls, session, obj):
+        session.add(obj)
+        session.commit()
+
+    @classmethod
+    def get_by_id(cls, session, foto_id):
+        return session.query(cls).filter_by(foto_id=foto_id).first()
+
+    @classmethod
+    def get_by_recipe_id(cls, session, recipe_id):
+        return session.query(cls).filter_by(recipe_id=recipe_id).all()
+
+    @classmethod
+    def update(cls, session, foto_id, **kwargs):
+        image = session.query(cls).filter_by(foto_id=foto_id).first()
+        if image:
+            for key, value in kwargs.items():
+                setattr(image, key, value)
+            session.commit()
+        return image
+
+    @classmethod
+    def delete(cls, session, foto_id):
+        image = session.query(cls).filter_by(foto_id=foto_id).first()
+        if image:
+            session.delete(image)
+            session.commit()
+        return image
+
 
 class Tag(Base):
     __tablename__ = "Tag"
@@ -72,6 +202,40 @@ class Tag(Base):
     recipe_id = Column(Integer, ForeignKey("Recipe.recipe_id"), nullable=False)
     tag = Column(String(255), nullable=False)
     recipe = relationship("Recipe", back_populates="tags")
+
+    def __repr__(self):
+        return f"<Tag(id={self.tag_id}, tag='{self.tag}', recipe_id={self.recipe_id})>"
+
+    @classmethod
+    def insert(cls, session, obj):
+        session.add(obj)
+        session.commit()
+
+    @classmethod
+    def get_by_id(cls, session, tag_id):
+        return session.query(cls).filter_by(tag_id=tag_id).first()
+
+    @classmethod
+    def get_by_recipe_id(cls, session, recipe_id):
+        return session.query(cls).filter_by(recipe_id=recipe_id).all()
+
+    @classmethod
+    def update(cls, session, tag_id, **kwargs):
+        tag = session.query(cls).filter_by(tag_id=tag_id).first()
+        if tag:
+            for key, value in kwargs.items():
+                setattr(tag, key, value)
+            session.commit()
+        return tag
+
+    @classmethod
+    def delete(cls, session, tag_id):
+        tag = session.query(cls).filter_by(tag_id=tag_id).first()
+        if tag:
+            session.delete(tag)
+            session.commit()
+        return tag
+
 
 
 # Create database tables
@@ -115,6 +279,7 @@ def insert_dummy_data():
     session.commit()
     session.close()
     logging.info("Dummy data inserted successfully.")
+
 
 # Read methods
 def get_all_recipes():
