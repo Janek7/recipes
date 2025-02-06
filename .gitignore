@@ -5,3 +5,5 @@ Recipes*.xlsx
 Recipes*.csv
 test.py
 config.ini
+*.dtmp
+*.bkp
