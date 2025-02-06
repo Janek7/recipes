@@ -5,6 +5,7 @@ import typing
 from sqlalchemy import create_engine, Column, Integer, String, Date, ForeignKey, Text
 from sqlalchemy.ext.declarative import declarative_base
 from sqlalchemy.orm import sessionmaker, relationship
+import pandas as pd
 
 # Configure logging
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -160,10 +161,11 @@ class Image(Base):
     foto_id = Column(Integer, primary_key=True, autoincrement=True)
     recipe_id = Column(Integer, ForeignKey("Recipe.recipe_id"), nullable=False)
     file_name = Column(String(255), nullable=False)
+    image_number = Column(Integer)
     recipe = relationship("Recipe", back_populates="images")
 
     def __repr__(self):
-        return f"<Image(id={self.foto_id}, file_name='{self.file_name}', recipe_id={self.recipe_id})>"
+        return f"<Image(id={self.foto_id}, image_number='{self.image_number}', file_name='{self.file_name}', recipe_id={self.recipe_id})>"
 
     @classmethod
     def insert(cls, session, obj):
@@ -245,6 +247,19 @@ def create_database():
     logging.info("Database and tables created successfully.")
 
 
+def truncate_tables(tables: typing.List) -> None:
+    """
+    truncate a given list of tables
+    """
+    logging.info(f"Truncate {len(tables)} tables: {' '.join([str(t) for t in tables])}")
+    session = SessionLocal()
+    for table in tables:
+        session.query(table).delete()
+    session.commit()
+    session.close()
+    logging.info("Successfully truncated!")
+
+
 # Insert dummy data
 def insert_dummy_data():
     logging.info("Truncating tables before inserting dummy data.")
@@ -270,7 +285,7 @@ def insert_dummy_data():
     instruction2 = Instruction(recipe_id=recipe.recipe_id, instruction="Mix eggs with cheese.", order_number=2)
     session.add_all([instruction1, instruction2])
     
-    image = Image(recipe_id=recipe.recipe_id, file_name="carbonara.jpg")
+    image = Image(recipe_id=recipe.recipe_id, image_number=1, file_name="carbonara.jpg")
     session.add(image)
     
     tag = Tag(recipe_id=recipe.recipe_id, tag="Italian")
@@ -318,9 +333,32 @@ def get_all_tags():
     return tags
 
 
+# util methods
+def insert_recipe_from_dataframe(session, idx: int, recipe_row: pd.Series) -> None:
+    """
+    inserts a recipe row from excel data into the tables Recipe, Tag and Image
+    """
+    tags = [Tag(tag=recipe_row["Source"])] + ([Tag(tag="Top")] if pd.notna(recipe_row['Top']) else [])
+    images = [Image(file_name=recipe_row[f"Image {i}"], image_number=i) 
+              for i in range(1,4) if pd.notna(recipe_row[f"Image {i}"])]
+
+    recipe = Recipe(
+        # recipe_id=idx,
+        title=recipe_row["Recipe"],
+        date=recipe_row["Date"],
+        description=recipe_row["Description"],
+        source=recipe_row["Source"],
+        source_link=recipe_row["Source Link"],
+        categorie=recipe_row["Category"],
+        tags=tags,
+        images=images
+    )
+    Recipe.insert(session, recipe)
+
+
 if __name__ == "__main__":
     create_database()
-    insert_dummy_data()
+    # insert_dummy_data()
 
     recipes = get_all_recipes()
     for r in recipes:

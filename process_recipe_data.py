@@ -1,4 +1,5 @@
 import os
+import logging
 from typing import Dict, Tuple, List
 import unicodedata
 import requests
@@ -12,6 +13,11 @@ import glob
 import pandas as pd
 import yaml
 import instaloader
+
+from database_engine import SessionLocal, insert_recipe_from_dataframe, truncate_tables, Recipe, Tag, Image
+
+
+logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
 
 SOURCE_BOOKS = [
     "Italienische Feierabendküche",
@@ -34,6 +40,23 @@ time_icon_element = '''<svg xmlns="http://www.w3.org/2000/svg" class="icon icon-
   <circle cx="12" cy="12" r="9"></circle>
   <polyline points="12 7 12 12 15 15"></polyline>
 </svg>'''
+
+
+def transfer_recipes_to_database(recipes: pd.DataFrame) -> None:
+    """
+    iterate over dataframe and insert every recipe and related data into the database
+    """
+    logging.info("start inserting all recipes to database")
+    recipes = recipes[recipes['Recipe'].notnull()]
+
+    truncate_tables(tables=[Recipe, Tag, Image])
+    session = SessionLocal()
+
+    for idx, row in recipes.iterrows():
+        print(f"{idx + 1}. Process {row['Recipe']}".center(100, '-') + "\n")
+        insert_recipe_from_dataframe(session, idx, row)
+    session.close()
+    logging.info("successfully inserted all recipes to the database")
 
 
 def process_recipes(recipes: pd.DataFrame) -> None:
@@ -341,8 +364,9 @@ def get_instagram_username(url: str) -> str:
 
 
 if __name__ == '__main__':
-    # print(os.path.exists("G:\\Meine Ablage\\Recipes.xlsx"))
 
     df = pd.read_excel("G:\\Meine Ablage\\Recipes.xlsx")
     # df = pd.read_excel("Recipes.xlsx", engine='openpyxl')
-    process_recipes(recipes=df)
+    
+    #process_recipes(recipes=df)
+    transfer_recipes_to_database(recipes=df)
