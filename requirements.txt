@@ -5,3 +5,5 @@ instaloader
 langchain
 langchain-huggingface
 beautifulsoup4
+sqlite3
+sqlalchemy
