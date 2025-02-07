@@ -34,7 +34,7 @@ class Recipe(Base):
     content_freetext = Column(Text)
     ingredients = relationship("Ingredient", back_populates="recipe")
     instructions = relationship("Instruction", back_populates="recipe")
-    images = relationship("Image", back_populates="recipe")
+    resources = relationship("Resource", back_populates="recipe")
     tags = relationship("Tag", back_populates="recipe")
 
     def __repr__(self):
@@ -156,16 +156,17 @@ class Instruction(Base):
         return instruction
 
 
-class Image(Base):
-    __tablename__ = "Image"
-    foto_id = Column(Integer, primary_key=True, autoincrement=True)
+class Resource(Base):
+    __tablename__ = "Resource"
+    resource_id = Column(Integer, primary_key=True, autoincrement=True)
     recipe_id = Column(Integer, ForeignKey("Recipe.recipe_id"), nullable=False)
-    file_name = Column(String(255), nullable=False)
-    image_number = Column(Integer)
-    recipe = relationship("Recipe", back_populates="images")
+    type = Column(String(255), nullable=False)
+    path = Column(Text, nullable=False)
+    order_number = Column(Integer)
+    recipe = relationship("Recipe", back_populates="resources")
 
     def __repr__(self):
-        return f"<Image(id={self.foto_id}, image_number='{self.image_number}', file_name='{self.file_name}', recipe_id={self.recipe_id})>"
+        return f"<Resource(id={self.foto_id}, type='{self.type}', order_number='{self.order_number}', path={self.path})>"
 
     @classmethod
     def insert(cls, session, obj):
@@ -173,8 +174,8 @@ class Image(Base):
         session.commit()
 
     @classmethod
-    def get_by_id(cls, session, foto_id):
-        return session.query(cls).filter_by(foto_id=foto_id).first()
+    def get_by_id(cls, session, resource_id):
+        return session.query(cls).filter_by(foto_id=resource_id).first()
 
     @classmethod
     def get_by_recipe_id(cls, session, recipe_id):
@@ -182,20 +183,20 @@ class Image(Base):
 
     @classmethod
     def update(cls, session, foto_id, **kwargs):
-        image = session.query(cls).filter_by(foto_id=foto_id).first()
-        if image:
+        resource = session.query(cls).filter_by(foto_id=foto_id).first()
+        if resource:
             for key, value in kwargs.items():
-                setattr(image, key, value)
+                setattr(resource, key, value)
             session.commit()
-        return image
+        return resource
 
     @classmethod
     def delete(cls, session, foto_id):
-        image = session.query(cls).filter_by(foto_id=foto_id).first()
-        if image:
-            session.delete(image)
+        resource = session.query(cls).filter_by(foto_id=foto_id).first()
+        if resource:
+            session.delete(resource)
             session.commit()
-        return image
+        return resource
 
 
 class Tag(Base):
@@ -265,7 +266,7 @@ def insert_dummy_data():
     logging.info("Truncating tables before inserting dummy data.")
     session = SessionLocal()
     session.query(Tag).delete()
-    session.query(Image).delete()
+    session.query(Resource).delete()
     session.query(Instruction).delete()
     session.query(Ingredient).delete()
     session.query(Recipe).delete()
@@ -285,8 +286,8 @@ def insert_dummy_data():
     instruction2 = Instruction(recipe_id=recipe.recipe_id, instruction="Mix eggs with cheese.", order_number=2)
     session.add_all([instruction1, instruction2])
     
-    image = Image(recipe_id=recipe.recipe_id, image_number=1, file_name="carbonara.jpg")
-    session.add(image)
+    resource = Resource(recipe_id=recipe.recipe_id, order_number=1, file_name="carbonara.jpg")
+    session.add(resource)
     
     tag = Tag(recipe_id=recipe.recipe_id, tag="Italian")
     session.add(tag)
@@ -318,12 +319,12 @@ def get_all_instructions():
     session.close()
     return instructions
 
-def get_all_images():
-    logging.info("Fetching all images.")
+def get_all_resource():
+    logging.info("Fetching all resources.")
     session = SessionLocal()
-    images = session.query(Image).all()
+    resources = session.query(Resource).all()
     session.close()
-    return images
+    return resources
 
 def get_all_tags():
     logging.info("Fetching all tags.")
@@ -336,11 +337,16 @@ def get_all_tags():
 # util methods
 def insert_recipe_from_dataframe(session, idx: int, recipe_row: pd.Series) -> None:
     """
-    inserts a recipe row from excel data into the tables Recipe, Tag and Image
+    inserts a recipe row from excel data into the tables Recipe, Tag and Resource
     """
     tags = [Tag(tag=recipe_row["Source"])] + ([Tag(tag="Top")] if pd.notna(recipe_row['Top']) else [])
-    images = [Image(file_name=recipe_row[f"Image {i}"], image_number=i) 
-              for i in range(1,4) if pd.notna(recipe_row[f"Image {i}"])]
+    image_resources = [
+        Resource(
+            type="Image", 
+            path=recipe_row[f"Image {i}"], 
+            order_number=i
+        ) 
+    for i in range(1,4) if pd.notna(recipe_row[f"Image {i}"])]
 
     recipe = Recipe(
         # recipe_id=idx,
@@ -351,8 +357,9 @@ def insert_recipe_from_dataframe(session, idx: int, recipe_row: pd.Series) -> No
         source_link=recipe_row["Source Link"],
         categorie=recipe_row["Category"],
         tags=tags,
-        images=images
+        resources=image_resources
     )
+    # recipe.resources.extend(image_resources)
     Recipe.insert(session, recipe)
 
 

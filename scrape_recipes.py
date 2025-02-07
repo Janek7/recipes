@@ -6,7 +6,7 @@ from urllib.parse import urlparse
 from bs4 import BeautifulSoup
 import instaloader
 
-from database_engine import SessionLocal, Recipe, Image
+from database_engine import SessionLocal, Recipe, Resource
 
 # Configure logging
 logging.basicConfig(level=logging.WARNING, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -133,13 +133,15 @@ def scrape_all_instagram_posts(recipes: List[Recipe], session) -> None:
         username, caption, video_url = scrape_instagram_post(recipe.source_link)
 
         # update Recipe object and create Resource object
-        video_resource = Image(
-            recipe=recipe, 
-            file_name=video_url,
-            image_number=1)        
-        recipe.images.append(video_resource)
-        
-        # update include previously set image update
+        video_resource = Resource(
+            recipe=recipe,
+            type="Instagram Video",
+            path=video_url,
+            order_number=1
+        )        
+        recipe.resources.append(video_resource)
+
+        # update includes previously set resource update
         Recipe.update(session, recipe.recipe_id, **{
             "instagram_account_name": username,
             "content_freetext": caption,

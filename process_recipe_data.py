@@ -14,7 +14,7 @@ import pandas as pd
 import yaml
 import instaloader
 
-from database_engine import SessionLocal, insert_recipe_from_dataframe, truncate_tables, Recipe, Tag, Image
+from database_engine import SessionLocal, insert_recipe_from_dataframe, truncate_tables, Recipe, Tag, Resource
 
 
 logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
@@ -49,7 +49,7 @@ def transfer_recipes_to_database(recipes: pd.DataFrame) -> None:
     logging.info("start inserting all recipes to database")
     recipes = recipes[recipes['Recipe'].notnull()]
 
-    truncate_tables(tables=[Recipe, Tag, Image])
+    truncate_tables(tables=[Recipe, Tag, Resource])
     session = SessionLocal()
 
     for idx, row in recipes.iterrows():
