@@ -4,11 +4,13 @@ import logging
 from urllib.parse import urlparse
 
 from bs4 import BeautifulSoup
+import instaloader
 
-from database_engine import Recipe, SessionLocal
+from database_engine import SessionLocal, Recipe, Image
 
 # Configure logging
-logging.basicConfig(level=logging.INFO, format='%(asctime)s - %(levelname)s - %(message)s')
+logging.basicConfig(level=logging.WARNING, format='%(asctime)s - %(levelname)s - %(message)s')
+logging.getLogger("sqlalchemy.engine").setLevel(logging.WARNING)
 
 
 def ScrapeException(Exception):
@@ -69,15 +71,10 @@ def extract_domain(url):
     return domain
 
 
-def scrape_all_websites(recipes: List[Recipe]) -> None:
+def scrape_all_websites(recipes: List[Recipe], session) -> None:
     """
     scrape website content for all recipe with an URL as source excluding Instagram
     """
-    session = SessionLocal()
-
-    # load all recipes from database
-    recipes = Recipe.get_all(session)
-
     # filter for recipes with website as source
     recipes = [r for r in recipes if r.source_link is not None and "http" in r.source_link and r.source != "Instagram"]
     
@@ -98,22 +95,75 @@ def scrape_all_websites(recipes: List[Recipe]) -> None:
             })
         except Exception as e:
             logging.warning(e)
-    
-    session.close()
 
 
 # SCRAPING INSTAGRAM
+instagram_loader = instaloader.Instaloader()
 
-def scrape_all_instagram_posts() -> None:
+
+def scrape_instagram_post(url: str) -> Tuple[str, str, str, str]:
+    """
+    get the user name and meta data of an instagram post or reel
+    """
+    # Extract the short code from the reel or post URL
+    # The short code is the unique identifier for each post or reel
+    short_code = url.split("/")[4]
+    
+    # Download the post using the short code
+    post = instaloader.Post.from_shortcode(instagram_loader.context, short_code)
+    
+    # Get the username of the user who posted the reel
+    username = post.owner_username
+    # Get content info
+    caption = post.caption
+    video_url = post.video_url
+    
+    return username, caption, video_url
+
+
+def scrape_all_instagram_posts(recipes: List[Recipe], session) -> None:
     """
     scrape instagram account names and descriptions
     """
-    pass
+    # filter for recipes with website as source
+    recipes = [r for r in recipes if r.source_link is not None and "http" in r.source_link and r.source == "Instagram"]
+    
+    for idx, recipe in enumerate(recipes):
+        logging.info(f"Scrape instagram recipe {idx}: {str(recipe)}")
+        username, caption, video_url = scrape_instagram_post(recipe.source_link)
+
+        # update Recipe object and create Resource object
+        video_resource = Image(
+            recipe=recipe, 
+            file_name=video_url,
+            image_number=1)        
+        recipe.images.append(video_resource)
+        
+        # update include previously set image update
+        Recipe.update(session, recipe.recipe_id, **{
+            "instagram_account_name": username,
+            "content_freetext": caption,
+        })
+
+
+# MAIN METHOD
+
+
+def main() -> None:
+    """
+    invoke scraper methods with all recipes
+    """
+    session = SessionLocal()
+    recipes = Recipe.get_all(session)
+    
+    # scrape_all_websites(recipes, session)
+    scrape_all_instagram_posts(recipes, session)
+
+    session.close()
 
 
 if __name__ == '__main__':
-    # scrape_all_websites()
-    scrape_all_instagram_posts()
+    main()
 
     # scrape_website(url="https://www.deepl.com/de/translator")
 
