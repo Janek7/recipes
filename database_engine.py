@@ -78,10 +78,12 @@ class Ingredient(Base):
     recipe_id = Column(Integer, ForeignKey("Recipe.recipe_id"), nullable=False)
     name = Column(String(255), nullable=False)
     quantity = Column(String(255))
+    extraction_mode = Column(String(255))
     recipe = relationship("Recipe", back_populates="ingredients")
 
     def __repr__(self):
-        return f"<Ingredient(id={self.ingredient_id}, name='{self.name}', quantity='{self.quantity}', recipe_id={self.recipe_id})>"
+        return f"<Ingredient(id={self.ingredient_id}, name='{self.name}'," \
+            "quantity='{self.quantity}', extraction_mode={self.extraction_mode})>"
 
     @classmethod
     def insert(cls, session, obj):
@@ -120,10 +122,12 @@ class Instruction(Base):
     recipe_id = Column(Integer, ForeignKey("Recipe.recipe_id"), nullable=False)
     instruction = Column(Text, nullable=False)
     order_number = Column(Integer)
+    extraction_mode = Column(String(255))
     recipe = relationship("Recipe", back_populates="instructions")
 
     def __repr__(self):
-        return f"<Instruction(id={self.instruction_id}, order_number={self.order_number}, instruction='{self.instruction[:50]}...')>"
+        return f"<Instruction(id={self.instruction_id}, order_number={self.order_number}, " \
+            "instruction='{self.instruction[:50]}...', extraction_mode='{self.extraction_mode}')>"
 
     @classmethod
     def insert(cls, session, obj):
@@ -278,12 +282,12 @@ def insert_dummy_data():
     session.add(recipe)
     session.commit()
     
-    ingredient1 = Ingredient(recipe_id=recipe.recipe_id, name="Spaghetti", quantity="200g")
-    ingredient2 = Ingredient(recipe_id=recipe.recipe_id, name="Eggs", quantity="2")
+    ingredient1 = Ingredient(recipe_id=recipe.recipe_id, name="Spaghetti", quantity="200g", extraction_mode="Full Text")
+    ingredient2 = Ingredient(recipe_id=recipe.recipe_id, name="Eggs", quantity="2", extraction_mode="Full Text")
     session.add_all([ingredient1, ingredient2])
     
-    instruction1 = Instruction(recipe_id=recipe.recipe_id, instruction="Boil the spaghetti.", order_number=1)
-    instruction2 = Instruction(recipe_id=recipe.recipe_id, instruction="Mix eggs with cheese.", order_number=2)
+    instruction1 = Instruction(recipe_id=recipe.recipe_id, instruction="Boil the spaghetti.", order_number=1, extraction_mode="Full Text")
+    instruction2 = Instruction(recipe_id=recipe.recipe_id, instruction="Mix eggs with cheese.", order_number=2, extraction_mode="Full Text")
     session.add_all([instruction1, instruction2])
     
     resource = Resource(recipe_id=recipe.recipe_id, order_number=1, file_name="carbonara.jpg")
