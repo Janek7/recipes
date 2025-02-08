@@ -52,7 +52,9 @@ class Recipe(Base):
 
     @classmethod
     def get_all(cls, session):
-        return session.query(cls).all()
+        result = session.query(cls).all()
+        logging.info(f"Loaded {len(result)} recipes from the database.")
+        return result
 
     @classmethod
     def update(cls, session, recipe_id, **kwargs):
@@ -120,7 +122,7 @@ class Instruction(Base):
     __tablename__ = "Instruction"
     instruction_id = Column(Integer, primary_key=True, autoincrement=True)
     recipe_id = Column(Integer, ForeignKey("Recipe.recipe_id"), nullable=False)
-    instruction = Column(Text, nullable=False)
+    text = Column(Text, nullable=False)
     order_number = Column(Integer)
     extraction_mode = Column(String(255))
     recipe = relationship("Recipe", back_populates="instructions")
