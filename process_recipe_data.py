@@ -368,5 +368,6 @@ if __name__ == '__main__':
     df = pd.read_excel("G:\\Meine Ablage\\Recipes.xlsx")
     # df = pd.read_excel("Recipes.xlsx", engine='openpyxl')
     
-    #process_recipes(recipes=df)
-    transfer_recipes_to_database(recipes=df)
+    process_recipes(recipes=df)
+    
+    # transfer_recipes_to_database(recipes=df)

@@ -8,6 +8,72 @@
 // Real data is injected by python script process_recipe_data.py into recipesData
 const recipesData = [
     {
+        "slug": "kurbis-gugelhupf",
+        "title": "K\u00fcrbis Gugelhupf",
+        "category": "Backen",
+        "preview": "Schmeck mit Butterk\u00fcrbis am besten Wo gefunden? Im Internet. Guten Appetit! :)"
+    },
+    {
+        "slug": "tortellinierbsenauflauf",
+        "title": "Tortellini-Erbsen-Auflauf",
+        "category": "Auflauf",
+        "preview": "Wo gefunden? Im Internet. Guten Appetit! :)"
+    },
+    {
+        "slug": "sue-buchteln",
+        "title": "S\u00fc\u00dfe Buchteln",
+        "category": "Sonstiges",
+        "preview": "Mit F\u00fcllungen: Quark und Marmelade Wo gefunden? Im Internet. Guten Appetit! :)"
+    },
+    {
+        "slug": "kartner-reindling",
+        "title": "K\u00e4rtner Reindling",
+        "category": "Backen",
+        "preview": "Haben wir mit Nussf\u00fcllung gebacken. Vergleichbar mit Oma Irmas ber\u00fchmtem gewickelten Kranz Wo gefunden? Im Internet. Guten Appetit! :)"
+    },
+    {
+        "slug": "kefir-pernik",
+        "title": "Kefir Pern\u00edk",
+        "category": "Backen",
+        "preview": "Wo gefunden? Im Internet. Guten Appetit! :)"
+    },
+    {
+        "slug": "onepotorzo",
+        "title": "One-Pot-Orzo",
+        "category": "Risotto",
+        "preview": "Wo gefunden? Im Kochbuch 'Italienische Feierabendk\u00fcche'. Guten Appetit! :)"
+    },
+    {
+        "slug": "cacio-e-pepe",
+        "title": "Cacio e Pepe",
+        "category": "Pasta",
+        "preview": "Endless Pastabilities ... Wichtig: Nudeln etwas abk\u00fchlen lassen, bevor die Parmesan Creme dazu gegeben wird, damit es keine F\u00e4den zieht Wo gefunden? Auf Instagram. Guten Appetit! :)"
+    },
+    {
+        "slug": "safran-risotto",
+        "title": "Safran Risotto",
+        "category": "Risotto",
+        "preview": "Freestyled Wo gefunden? Im Internet. Guten Appetit! :)"
+    },
+    {
+        "slug": "joghurt-pancakes",
+        "title": "Joghurt Pancakes",
+        "category": "Fr\u00fchst\u00fcck",
+        "preview": "Schmeckt mit Joghurt oben drauf sehr cremig! Wo gefunden? Im Internet. Guten Appetit! :)"
+    },
+    {
+        "slug": "avocado-brot-mit-ruhrei",
+        "title": "Avocado Brot mit R\u00fchrei",
+        "category": "Fr\u00fchst\u00fcck",
+        "preview": "Avocado k\u00f6nnen alternative auch nur in Scheiben geschnitten werden Wo gefunden? Im Internet. Guten Appetit! :)"
+    },
+    {
+        "slug": "kokos-gugelhupf",
+        "title": "Kokos Gugelhupf",
+        "category": "Backen",
+        "preview": "Wo gefunden? Im Internet. Guten Appetit! :)"
+    },
+    {
         "slug": "chili-sin-carne",
         "title": "Chili sin Carne",
         "category": "Reis",
@@ -191,7 +257,7 @@ const recipesData = [
         "slug": "ofen-gemuse-pasta",
         "title": "Ofen Gem\u00fcse Pasta",
         "category": "Pasta",
-        "preview": "Wo gefunden? Auf Instagram. Guten Appetit! :)"
+        "preview": "Wo gefunden? Im Internet. Guten Appetit! :)"
     },
     {
         "slug": "linsencurry",

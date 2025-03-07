@@ -9,6 +9,8 @@ title: "Buchti\u010Dky se \u0161od\xF3"
 ---
 
 
+![Foto 1](IMG_9880.JPEG)
+
 > Wo gefunden? Im Internet.
 
 Guten Appetit! :)

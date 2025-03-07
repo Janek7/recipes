@@ -9,6 +9,6 @@ title: "Ofen Gem\xFCse Pasta"
 ---
 
 
-> Wo gefunden? Auf Instagram.
+> Wo gefunden? Im Internet unter [lenaeats.com > 'Pasta mit Gemüsesauce – einfaches Rezept für Ofen-Gemüsesauce - Lena Eats | Veganer Foodblog'](https://lenaeats.com/pasta-mit-gemuesesauce-aus-dem-ofen/).
 
 Guten Appetit! :)
